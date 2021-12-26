@@ -1,0 +1,254 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,hmargin=0.5in,vmargin=0.25in,noheadfoot]{geometry}
+\usepackage[none]{hyphenat}
+\usepackage{fontspec}
+\usepackage[]{amsmath}
+\usepackage{chemfig}
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+\usepackage{modiagram}
+\usepackage{titlesec}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            changecounternumbering=0
+           ]{latexbangla}
+\newfontfamily\bn[Language=Bengali,Script=Bengali,Scale=0.8]{ABShaplaBeta}
+
+\author{ Masud Parvez }
+\title{Basic \LaTeX{}  Template}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Don't need paper's abstract \ldots
+\end{abstract}
+
+\section{Introduction}
+This is a basic \LaTeX{} template.\\
+
+\begin{itemize}
+\item \ref{Language} Language/ভাষা
+\item \ref{Formatting} Formatting.
+\item \ref{Lists} Lists.
+\item \ref{Reference} Reference.
+\end{itemize}
+
+\section{Bengali Text Writing\label{Language}}
+\subsection{Latexbangla Package }
+\LaTeX{} Bangla has complete bangla support
+with some issues.
+fix numerals issue by editing latexbangla.sty
+line 139 \verb|\setmainlanguage[numerals=Bengali, changecounternumbering=true]{bengali}|
+
+\begin{verbatim}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            % changecounternumbering=0
+           ]{latexbangla}
+\end{verbatim}
+
+\subsection{Using begin/end Environment}
+\begin{verbatim}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setmainfont[Language=English,Script=Latin]{Liberation Sans}
+\setsansfont[Language=English,Script=Latin]{Liberation Serif}
+\setmonofont[Language=English,Script=Latin]{Liberation Mono}
+\setotherlanguages{sanskrit,bengali}
+\newfontfamily\bengalifont[Language=Bengali,Script=Bengali,Scale=0.8]{Lohit Bengali}
+\newfontfamily\bengalifontsf[Language=Bengali,Script=Bengali,Scale=0.8]{Lohit Bengali}
+\newfontfamily\bengalifonttt[Language=Bengali,Script=Bengali,Scale=0.8]{Lohit Bengali}
+\end{verbatim}
+\verb|\begin{bengali}|
+\\
+এই ব্লকে বাংলা লিখতে হবে
+\\
+\verb|\end{bengali}|
+
+\subsection{Using Bracket Block}
+\verb|\newfontfamily\bn[Language=Bengali,Script=Bengali,Scale=0.8]{Kalpurush}|
+\verb|{\bn| {\bn এই ব্র্যাকেটে বাংলা লিখতে হবে \verb|}|
+
+\section{Formatting\label{Formatting}}
+In this section basic \LaTeX{} formatting will be discussed.
+
+To format section style use titlesec
+package with titleformat command \\
+
+\subsection{Paragraph}
+
+\verb|\par|
+command will create a paragraph.\par
+This is a paragraph. Created using
+\verb|\par|
+command.\\
+    This line is not a Paragraph.
+
+This is a Paragraph.
+Created using two return or blank line.
+
+\subsubsection{Line Break}
+\verb|\newline or \\| Will create new line\\
+Hello
+This line is not a new line. \\
+This new line was created
+using \verb|\\| \newline
+This new line was created
+using \verb|\newline|
+
+\subsubsection{Spacing}
+This is \hspace{5cm} 5cm horizontal space.
+Created using
+\hspace*{5cm} 5cm horizontal space
+at the beginning of a line.
+\verb|\hspace{5cm}| \\
+This is\\
+Leftside \hfill Rightside \\
+of a page in a line. Created using
+\verb|\hfill| \\
+Similarly, \\
+\verb|\vspace{value}| \\
+Will create blank
+vertical space of desired length.\\
+\verb|\vfill| \\
+will create blank
+vertical space
+in a page
+and start new text from
+bottom of the page. \\
+\verb|\smallskip \medskip \bigskip| \\
+are some vertical spacing command.
+
+\subsubsection{Formatting Paragraph And  Lines}
+\verb|\renewcommand{\baselinestretch}{1.5}| \\
+This will set space between lines. \\
+\verb|\setlength{\baselineskip}{value}| \\
+Minimum space between the bottom of
+two successive lines in a paragraph. \\
+\verb|\setlength{\parindent}{4em}| \\
+This will set paragraph indent. \\
+\verb|\setlength{\parskip}{1em}| \\
+This will set space between two paragraph.
+
+\subsubsection{Alignment Of Paragraph And Lines}
+Default \LaTeX{} alignment is justified. \\
+\verb|\usepackage[document]{ragged2e}| \\
+Will align text to the left.
+Command of this package are
+\verb|\\raggedright \\raggedleft \centering \justify| \\
+Use between begin/end environment.
+
+\subsubsection{Page Break}
+\verb|\clearpage or \newpage| \\
+Will create new page.
+newpage command will be safer.
+
+\subsection{Normal Text}
+This is a normal text.
+
+\subsection{Bold Text}
+\textbf{This is a Bold text.}
+
+\subsection{Italic Text}
+\textit{This is an Italicized text.}
+
+\subsection{Emphatic Text}
+\emph{This is an Emphatic text.}
+
+\subsection{Underline Text}
+\underline{This is an Underlined text.}
+
+\subsection{Teletype Text}
+\texttt{This is a Teletype text}
+
+\subsection{Quoted Text}
+This is not a perfect double "Quoted" text. \\
+This is not a perfect single 'Quoted' text. \\
+This is a perfect double ``Quoted'' text. \\
+This is a perfect single `Quoted' text.
+
+\section{Lists\label{Lists}}
+Change numbering style with\\
+\verb|\renewcommand{\labelenumi}{\arabic{enumi}}| \\
+label options are
+arabic,
+roman,
+Roman,
+alph,
+Alph\\ \\
+enumi-for 1st level\\
+enumii-for 2nd level\\
+enumiii-for 3rd level\\
+enumiv-for 4th level\\
+start 2nd level counter from
+number 5 with\\
+\verb|\setcounter{enumii}{4}|
+\\ \\
+Change non numbered list style
+with\\
+\verb|\renewcommand{\labelitemi}{$\blacksquare$}|\\
+label item options are
+textbullet,
+textendash,
+textasteriskcentered,
+textperiodcentered,
+blacksquare,
+square.\\
+labelitemi-for 1st level\\
+labelitemii-for 2nd level\\
+labelitemiii-for 3rd level\\
+labelitemiv-for 4th level\\
+
+\subsection{Numbered List}
+\begin{enumerate}
+\item This is 1st item of enumerate or numbered list.
+\item This is 2nd item of enumerate or numbered list.
+\item This is 3rd item of enumerate or numbered list.
+\end{enumerate}
+
+\subsection{Non Numbered List}
+\verb|\renewcommand{\labelitemi}{$\textendash$}| change initial bullet style to dash.
+
+\begin{itemize}
+\item This is 1st item of itemize or non numbered list.
+\item This is 2nd item of itemize or non numbered list.
+\item This is 3rd item of itemize or non numbered list.
+\end{itemize}
+
+\subsection{Numbered Sub List}
+\begin{enumerate}
+\item This is numbered list 1.
+\begin{enumerate}
+\item This is numbered sub list 1.
+\item This is numbered sub list 2.
+\end{enumerate}
+\item This is numbered list 2.
+\end{enumerate}
+
+\subsection{Non Numbered Sub List}
+\begin{itemize}
+\item This is non numbered list 1.
+\begin{itemize}
+\item This is non numbered sub list 1.
+\item This is non numbered sub list 2.
+\end{itemize}
+\item This is non numbered list 2.
+\end{itemize}
+
+\subsection{List Without Bullet}
+\begin{description}
+ \item [Nested List 1] This is list 1 without bullet point.
+ \item [Nested List 2] This is list 2 without bullet point.
+\end{description}
+
+\section{Reference\label{Reference}}
+To add reference define label with
+\verb=\label{label name}= and call this lable with
+\verb=\ref{label name}=
+
+\end{document}

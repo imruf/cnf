@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,
+            lmargin=1in,rmargin=1in,
+            bmargin=1in,tmargin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            % changecounternumbering=0
+           ]{latexbangla}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% header
+\chead{
+\underline{{পৃষ্ঠা - \thepage}}
+}
+% footer
+\rfoot{চলমান পৃষ্ঠা-\thepage}
+
+\fancypagestyle{laststyle}
+{
+   \fancyfoot[R]{}
+   \fancyfoot[L]{}
+   \fancyfoot[C]{}
+   \fancyhead[R]{}
+   \fancyhead[L]{}
+   \fancyhead[C]{}
+}
+
+\newcommand{\beno}{C-1782263}
+\newcommand{\bedt}{07.11.2021}
+\newcommand{\lcno}{0000174121010513}
+\newcommand{\lcdt}{19.07.2021}
+\newcommand{\lienbank}{MERCANTILE BANK LTD.}
+\newcommand{\lcano}{268757}
+\newcommand{\lcadt}{{\lcdt}}
+\newcommand{\invno}{FLT2160017}
+\newcommand{\invdt}{10.10.2021}
+\newcommand{\blno}{SLIPKGCGP5398}
+\newcommand{\bldt}{14.10.2021}
+\newcommand{\good}{OTHER AMINO RESINS (ROKRETE PU-MF-PART A) ETC}
+\newcommand{\pkg}{34 PKGS = 20,000.00 KGS}
+\newcommand{\product}{}
+\newcommand{\crf}{NON CRF}
+\newcommand{\crfdt}{}
+\newcommand{\hscode}{3214.90.00}
+\newcommand{\price}{US\$ 20,757.19}
+\newcommand{\co}{MALAYSIA}
+\newcommand{\coship}{MALAYSIA}
+\newcommand{\vessel}{MV. SPIRIT OF DUBAI}
+\newcommand{\ssml}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\ssmla}{SHAFIPUR, KALIAKAIR
+\\
+GAZIPUR-1751, BANGLADESH.}
+\newcommand{\jsml}{JAMUNA SPINNING MILLS LTD.}
+\newcommand{\jsmla}{SHAFIPUR, KALIAKAIR
+\\
+GAZIPUR-1751, BANGLADESH.}
+\newcommand{\jdl}{JAMUNA DENIMS LTD.}
+\newcommand{\jdla}{SHAFIPUR, KALIAKAIR
+\\
+GAZIPUR-1751, BANGLADESH.}
+\newcommand{\scml}{SHAMEEM COMPOSITE MILLS LTD.}
+\newcommand{\jeal}{JAMUNA ELECTRONICS \& AUTOMOBILES LTD.}
+\newcommand{\jdwl}{JAMUNA DENIMS \& WEAVING LTD.}
+\newcommand{\htf}{HOORAIN HTF LTD.}
+\newcommand{\htfa}{BEJURA, SOUTH BEJURA, MADHABPUR,
+\\
+HOBIGONJ-3331, BANGLADESH
+}
+\newcommand{\tdj}{M/S THE DAILY JUGANTOR}
+\newcommand{\tdja}{Ka-244, Kuril, Progati Sarani, Vatara PS
+\\
+Dhaka-1229,Bangladesh}
+\newcommand{\jtril}{JAMUNA TYRE AND RUBBER INDUSTRIES LIMITED}
+\newcommand{\jtrila}{BEJURA, SOUTH BEJURA, MADHABPUR
+\\
+HOBIGONJ, BANGLADESH
+}
+
+\newcommand{\impn}{\jtril}
+\newcommand{\impadd}{\jtrila}
+\newcommand{\impbin}{000167492-0704}
+\newcommand{\impoldbin}{}
+\newcommand{\cnfn}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\cnfadd}{92, HIGH LEVEL ROAD
+\newline
+LALKHAN BAZAR, CHITTAGONG}
+\newcommand{\cnfain}{301 08 3417}
+\newcommand{\ircno}{আইআরসি নং - ২৬০৩২৬১২০৪২৬৭২০}
+\newcommand{\ircrenewdt}{৩০/০৬/২০২২ ইং}
+\newcommand{\musokr}{সেপ্টেম্বর-২১}
+\newcommand{\menifest}{2021/4853}
+\newcommand{\srofs}{এসআরও নং - ৫৭-আইন/২০০০/১৮২১/শুল্ক}
+\newcommand{\srofsd}{তারিখ: ২৩/০২/২০০০ খ্রি:}
+\newcommand{\sroooth}{এসআরও নং -১১৩-আইন/০২/কাস্টমস}
+\newcommand{\srooothd}{তারিখ: ২৪/০৫/২০২১ খ্রি:}
+\newcommand{\srooof}{এসআরও নং -১১৪-আইন/২০২১/০৩/কাস্টমস}
+\newcommand{\srooofd}{তারিখ: ২৪/০৫/২০২১ খ্রি:}
+\newcommand{\srooot}{এসআরও নং -১২০-আইন/২০২১/০৯/কাস্টমস}
+\newcommand{\sroootd}{তারিখ: ২৪/০৫/২০২১ খ্রিঃ}
+\newcommand{\srotsz}{এসআরও নং - ৩৬০-আইন/২০১৩/২৪৬৮/কাস্টমস}
+\newcommand{\srotszd}{তারিখ: ২৫/১১/২০১৩ খ্রি:}
+\newcommand{\nbrosnt}{জাতীয় রাজস্ব বোর্ডের পত্র নং - ০৮.০১.০০০০.০৬৮.১৮.০০৪.১৭/১৬৯(৩)}
+\newcommand{\nbrosntd}{তারিখ: ২৭/০৬/২০২১ খ্রি:}
+\newcommand{\nbrfs}{জাতীয় রাজস্ব বোর্ডের পত্র নং - ০৮.০১.০০০০.০৩৪.০২.৩০১.১৯-৪৭}
+\newcommand{\nbrfsd}{তারিখ: ১২/০৭/২০২১ খ্রি:}
+\newcommand{\cpc}{(সিপিসি ৪০০০/৪০৯)}
+
+\begin{document}
+\begin{center}
+\underline{\textbf{সংক্ষিপ্ত ন্যায় নির্ণয়ের আবেদন ফরম}}
+\end{center}
+\noindent
+বরাবর
+\\
+\begin{minipage}[t]{0.08\linewidth}
+\hspace{0em}
+\end{minipage}
+\begin{minipage}[t]{0.92\linewidth}
+কমিশনার অব কাস্টমস
+\\
+অতিঃ কমিশনার অব কাস্টমস
+\\
+যুগ্ম/ডেপুটি/সহঃ কমিশনার অব কাস্টমস
+\\
+রাজস্ব কর্মকর্তা / এস.পি.এস
+\\
+কাস্টম হাউজ,
+চট্টগ্রাম।
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.08\linewidth}
+বিষয়:
+\end{minipage}
+\begin{minipage}[t]{0.92\linewidth}
+জাহাজ {\vessel}, Rot No: {\menifest}, B/L No: {\blno}, DT: {\bldt}
+এর মাধ্যমে আমদানিকৃত পণ্য {\good} খালাসের নিমিত্তে
+দাখিলকৃত বি/ই রেজি নং- {\beno} তারিখ: {\bedt}।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.08\linewidth}
+মহোদয়,
+\end{minipage}
+\begin{minipage}[t]{0.92\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.08\linewidth}
+\hspace{1em}
+\end{minipage}
+আমি/আমরা এই মর্মে ঘোষণা
+করছি যে, বিষয়ে উল্লিখিত আমদানিকৃত পণ্যের HS Code
+পরিবর্তন হওয়াতে আমদানি নীতি আদেশের ১৯৬৯ ধারা
+৩২ লঙ্ঘনের কারনে/চালানের পণ্যের HS Code
+পরিবর্তন হওয়াতে
+The Customs Act, 1969
+-এর ধারা
+১৫৬(১)(১) মোতাবেক শাস্তিযোগ্য।
+\\
+\\
+\begin{minipage}[t]{0.08\linewidth}
+\hspace{1em}
+\end{minipage}
+যেহেতু, উল্লেখিত চালানের পণ্য আমাদের জরুরী প্রয়োজন
+এবং যেহেতু আমরা চালানটি দ্রুত খালাস করতে ইচ্ছুক
+তাই আমি/আমরা
+The Customs Act, 1969
+এর ১৮০ ধারা বলে কারণ দর্শানোর নোটিশ
+জারীকরণ, ব্যক্তিগত শুনানী গ্রহণ ইত্যাদি ব্যতিরেকে সংক্ষিপ্ত
+ন্যায়-নির্ণয়ের মাধ্যমে বিচার সম্পাদন করার আবেদন
+জানাচ্ছি।
+এ ক্ষেত্রে আপনি যে বিচারাদেশ জারী করবেন তা গ্রহণ করার
+ব্যাপারে আমি/আমাদের সম্মতি জ্ঞাপন করছি।
+\\
+\\
+\\
+\\
+\begin{minipage}[t]{0.50\linewidth}
+তারিখ:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+বিনীত নিবেদক
+\\
+\\
+আমদানিকারক/ক্ষমতাপ্রাপ্ত ব্যক্তির স্বাক্ষর ও সীল
+\\
+\\
+\\
+ঠিকানা:
+\\
+\\
+ফোন নম্বর:
+\end{minipage}
+\thispagestyle{laststyle}
+
+\end{document}
+

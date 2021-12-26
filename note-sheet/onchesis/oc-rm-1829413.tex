@@ -1,0 +1,626 @@
+\documentclass[12pt]{article}
+\usepackage[legalpaper,
+            lmargin=1in,rmargin=0.5in,
+            bmargin=1in,tmargin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage{adjustbox}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[]{amsmath}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            % changecounternumbering=0
+           ]{latexbangla}
+
+\newcommand{\my}{\includegraphics[height=3.2em]{pic/my.png}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% header
+\lhead{
+\framebox[1.1\width]{\footnotesize{``উন্নয়নের অক্সিজেন রাজস্ব''}}
+}
+\rhead{
+\my
+\\
+\framebox[1.1\width]{\footnotesize{``জনকল্যানে রাজস্ব''}}
+}
+% footer
+
+\fancypagestyle{laststyle}
+{
+   \fancyhead[C]{\underline{পাতা নং-}}
+   \fancyhead[L]{}
+   \fancyhead[R]{}
+}
+
+% \newcommand{\fileno}{নথি নং- এস-৫-১৬৩/স্টাফ/কাস/০৬-০৭/অংশ-২}
+%\newcommand{\fileno}{নথি নং- \hspace{15em}}
+\newcommand{\fileno}{\jealf}
+\newcommand{\jsmlf}{নথি নং- এস৫-৬৯১/স্টাফ/কাস/২০১৭-২০১৮/অংশ-০৩}
+\newcommand{\jfaclf}{নথি নং- এস৫-৫১৯/স্টাফ/কাস/২০-২১}
+\newcommand{\ssmlf}{নথি নং- এস-৫-১৪৪/স্টাফ/কাস/০৬-০৭/অংশ-১১}
+\newcommand{\tdjf}{নথি নং- এস-৫-৪৪৩/স্টাফ/কাস/০৬-০৭/অংশ-}
+\newcommand{\jealf}{নথি নং- এস-৫-৫৮৫/স্টাফ/কাস/২০১৩-২০১৪/অংশ-১২}
+\newcommand{\jdlf}{নথি নং- এস-৫-২৪৫/স্টাফ/কাস/২০০৬-২০০৭/অংশ-২}
+
+\newcommand{\filenou}{
+\begin{minipage}[t]{0.58\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.48\linewidth}
+\underline{\fileno}
+\end{minipage}
+}
+\newcommand{\nfpage}{
+\newpage
+\small
+{\filenou}
+}
+\newcommand{\beno}{C-1829413}
+\newcommand{\bedt}{15.11.2021}
+\newcommand{\rotno}{2021/5230}
+\newcommand{\pack}{STC:167 PKG}
+\newcommand{\conno}{$\boldsymbol{06}$}
+\newcommand{\co}{CHINA}
+\newcommand{\vessel}{MV.MCC NANJING}
+\newcommand{\fdt}{\hspace*{3em} তারিখ: \hspace{2.4em} /১২/২১}
+\newcommand{\frbdt}{তারিখ: \hspace{2.4em} /১২/২১}
+\newcommand{\good}{RAW MATERIALS}
+\newcommand{\depo}{...................................., DEPOT, CHITTAGONG}
+\newcommand{\rdepo}{.................................., DEPOT, CHITTAGONG}
+\newcommand{\blno}{HACK211090019}
+\newcommand{\bldt}{}
+\newcommand{\rno}{R-2040657}
+\newcommand{\rdt}{07-12-21}
+\newcommand{\ssml}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\ssmla}{SHAFIPUR, KALIAKAIR, GAZIPUR-1751, BANGLADESH.}
+\newcommand{\jsml}{JAMUNA SPINNING MILLS LTD.}
+\newcommand{\jsmla}{SHAFIPUR, KALIAKAIR, GAZIPUR-1751, BANGLADESH.}
+\newcommand{\jsmlaut}{Bejura, South Bejura, Madhabpur,Hobigonj-3331,Bangladesh.}
+\newcommand{\jdl}{JAMUNA DENIMS LTD.}
+\newcommand{\jdla}{SHAFIPUR, KALIAKAIR, GAZIPUR-1751, BANGLADESH.}
+\newcommand{\scml}{SHAMEEM COMPOSITE MILLS LTD.}
+\newcommand{\jeal}{JAMUNA ELECTRONICS \& AUTOMOBILES LTD.}
+\newcommand{\jdwl}{JAMUNA DENIMS \& WEAVING LTD.}
+\newcommand{\htf}{HOORAIN HTF LTD.}
+\newcommand{\tdj}{M/S THE DAILY JUGANTOR}
+\newcommand{\tdja}{Ka-244, Kuril, Progati Sarani;Vatara PS; Dhaka-1229; Bangladesh}
+\newcommand{\impn}{\jeal}
+\newcommand{\impadd}{SINABHA, KALIAKAIR, GAZILUR-1750}
+\newcommand{\cnfn}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\cnfadd}{92,HIGH LEVEL ROAD, LALKHAN BAZAR, CHITTAGONG}
+% ssml
+% \newcommand{\impreg}{২৩১৩৯৫০৬১৮০-এইচ, তারিখ: ০৯/০১/২০১৩}
+% jeal
+\newcommand{\impreg}{এল-২৯৩০১৩০১৩৪৩১-এইচ, তারিখ: ০৯/০১/২০১৩}
+%\newcommand{\impreg}{\hspace{10em} তারিখ: \hspace{5em}}
+\newcommand{\san}{MCC Transport(MAERSK BANGLADESH LIMITED)}
+\newcommand{\sad}{58, AGRABAD COMMERCIAL AREA (3RD FLOOR), CHITTAGONG, 4100.}
+\newcommand{\rodt}{তারিখ: \hspace{2.0em}/১২/২০২১ ইং}
+\newcommand{\robdt}{\hspace{2.0em}/১২/২০২১ ইং}
+\newcommand{\letterdt}{তারিখ: \hspace{3.0em}/১২/২০২১ ইং}
+\newcommand{\conn}{] FCL Container}
+\newcommand{\cond}{$\boldsymbol{\times 20^\prime}$}
+\newcommand{\condf}{$\boldsymbol{\times 40^\prime}$}
+\newcommand{\condn}{$\boldsymbol{\times 20^\prime\hspace{0.2em}\&\hspace{0.2em}01\times 40^\prime}$}
+\newcommand{\riskbondno}{২৬২৬৮}
+\newcommand{\riskbonddate}{ ০৮/১২/২১ খ্রি:}
+\newcommand{\riskbondt}{৭,৬০,০০০/-}
+\newcommand{\riskbondg}{৫০০/-}
+\newcommand{\consh}{
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{TEMU0692413}{\cond}
+&
+\textbf{HASU1124640}{\cond}
+&
+\textbf{MRKU9838908}{\cond}
+&
+\textbf{MRKU8300950}{\cond}
+\\
+\hline
+\textbf{SUDU7483419}{\cond}
+&
+\textbf{SUDU7715279}{\cond}
+&
+\textbf{UXXU4316525}{\condf}
+&
+\textbf{}
+\\
+\hline
+\end{tabular}
+}
+\begin{document}
+\begin{center}
+\vspace*{0.2\baselineskip}
+\footnotesize{গণপ্রজাতন্ত্রী বাংলাদেশ সরকার}
+\\
+\footnotesize{কাস্টম হাউস, চট্টগ্রাম।}
+\end{center}
+\begin{minipage}[t]{.76\linewidth}
+\hspace{0.5em}
+\end{minipage}
+\begin{minipage}[t]{0.24\linewidth}
+\footnotesize{রিস্ক বন্ড নং - {\riskbondno}}
+\end{minipage}
+\begin{minipage}[t]{.74\linewidth}
+\footnotesize{{\fileno}}
+\end{minipage}
+\begin{minipage}[t]{.26\linewidth}
+\footnotesize{\hspace{3.5em}তারিখ:{\riskbonddate}}
+\\
+\end{minipage}
+\footnotesize{বরাবরে
+\\
+SHAMEEM SPINNING MILLS LTD.
+\\
+92, HIGH LEVEL ROAD,
+\\
+LALKHAN BAZAR,
+\\
+CHITTAGONG.}
+\\
+\\
+\begin{minipage}[t]{0.04\linewidth}
+\footnotesize{বিষয়:}
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+\textbf{\footnotesize{আমদানিকৃত ও শুল্কায়িত
+[{\pack}, {\good}]
+C/O. {\co}
+হতে মালামালসহ
+% container
+[{\conno}{\condn}{\conn}
+চট্টগ্রাম বন্দর হতে
+আমদানিকারকের কারখানা চত্বরে
+নিয়ে যাওয়ার অনুমতি প্রসঙ্গে।}}
+\\
+\footnotesize{Vessel: {\vessel},
+ROT NO. {\rotno},
+B/L NO. \textbf{{\blno}}{\bldt}
+\\
+B/E NO. \textbf{\beno},
+DT: {\bedt},
+BANK/TREASURY NO: {\rno},
+DT: {\rdt}}
+\\
+\footnotesize{
+[{\conno}{\condn}{\conn}}
+\\
+\scriptsize{
+{\consh}
+}
+\\
+\footnotesize{
+\framebox[1.02\width]{IMP:{\impn}}
+\\
+\framebox[1.02\width]{FACTORY:{\impadd}}}
+\\
+\end{minipage}
+\footnotesize{উপর্যুক্ত বিষয়ে আপনার পত্র নং-নাই,
+{\letterdt}
+এর প্রেক্ষিতে জানানো যাচ্ছে যে, সংশ্লিষ্ট
+\textbf{Shipping Agent: {\san}},
+{\sad}
+কর্তৃক অনাপত্তি প্রদান করায় এবং সংশ্লিষ্ট
+শুল্কায়ন সেকশন কর্তৃক পণ্যচালানটি শুল্কায়নের
+বিপরীতে ইস্যুকৃত রিলিজ অর্ডারের ভিত্তিতে উপরোক্ত
+% container
+[{\conno}{\condn}{\conn}
+এ আমদানিকৃত মালামালসহ আমদানিকারকের নিজস্ব
+কারখানা চত্বর {\impadd} -এ নিম্নোক্ত
+শর্তে খালাস করার অনুমতি
+প্রদান করা হলো।}
+\\
+\begin{minipage}[t]{0.04\linewidth}
+\hspace{0.5em}
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+\scriptsize{(ক)}
+\end{minipage}
+\begin{minipage}[t]{.92\linewidth}
+\scriptsize{
+আমদানিকৃত আলোচ্য চালানের পণ্য
+জেটি কাস্টম ও এআইআর কর্তৃক শতভাগ কায়িক
+পরীক্ষা করা হয়।
+কায়িক পরীক্ষার প্রতিবেদনের আলোকে বি/ই এর
+ক্রমিক নং -১, ১৩, ১৪, ও ১৫ নং আইটেম
+খালাসকালে জেটিতে স্কেলে ওজন
+করে সঠিক প্রাপ্তি সাপেক্ষে ছাড়যোগ্য।
+পণ্যচালান
+কন্টেইনার বন্দর জেটি
+হতে স্থানান্তর কালে স্থায়ী
+আদেশ নং-০২, তারিখ: ২৯/০৮/২০১৯ ইং
+মোতাবেক (জেটি স্ক্যানিং)
+কর্মকর্তা কর্তৃক
+নিয়োজিত কর্মকর্তা
+কন্টেইনার
+নম্বর পরীক্ষা পূর্বক
+সঠিক প্রাপ্তি সাপেক্ষে
+শুল্কায়িত (ঘোষিত) মালামাল সঠিক পেলে
+ডেলিভাররীর অনুমতি
+দিবেন। সন্দেহজনক কন্টেইনার হলে
+উক্ত পণ্যচালান এ দপ্তরের AIR কর্মকর্তা
+পরীক্ষা করবেন এবং পরীক্ষায় পণ্য সঠিক পাওয়া গেলে
+তৎক্ষনাৎ খালাসের অনুমতি প্রদান করবেন।
+কোন প্রকার গড়মিল পরিলক্ষিত হলে
+কন্টেইনারসহ মালামাল ডেলিভারী কার্যক্রম স্থগিত রেখে
+তাৎক্ষনিকভাবে তা উর্দ্ধতন কর্তৃপক্ষের গোচরীভূত করবেন।}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+\hspace{0.5em}
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+\scriptsize{(খ)}
+\end{minipage}
+\begin{minipage}[t]{0.92\linewidth}
+\scriptsize{আমদানিকারকের কারখানা চত্বরে
+মালামাল খালাসের পর খালি কন্টেইনার পণ্য খালাসের
+৩০ (ত্রিশ) দিনের মধ্যে সংশ্লিষ্ট শিপিং এজেন্ট কর্তৃক
+প্রদত্ত অনাপত্তির শর্ত মোতাবেক স্থায়ী
+আদেশ নং-১৩, তারিখ: ০৪/১১/০৩ ইং
+অনুযায়ী শিপিং এজেন্টের মনোনীত কন্টেইনার
+ইয়ার্ড/ডিপো {\rdepo} এ ফেরৎ এনে সংশ্লিষ্ট
+শিপিং এজেন্ট, কাস্টম কর্তৃপক্ষের মাধ্যমে হস্তান্তর করে
+স্থানান্তরের প্রমাণস্বরূপ ডুপ্লিকেট রিস্ক বন্ডের পিছনে
+সংশ্লিষ্ট সকল পক্ষের গৃহীত স্বাক্ষরসহ
+(রিস্ক বন্ড অবমুক্ত করার জন্য)
+স্টাফ শাখায় দাখিল করবেন।
+তাছাড়া সহকারী/রাজস্ব কর্মকর্তা সংশ্লিষ্ট (ডিপো) কর্তৃক
+স্বাক্ষরিত প্রতিবেদনের কপি সংযুক্ত করতে হবে।
+ইহার ভিত্তিতে আমদানিকারক কর্তৃক দেয়
+রিস্ক বন্ড বাতিল করা হবে।}
+\\
+\\
+\\
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.60\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.40\linewidth}
+\begin{center}
+\footnotesize{(মোঃ জাহিদুল ইসলাম জামাল)}
+\\
+\footnotesize{রাজস্ব কর্মকর্তা (স্টাফ শাখা)}
+\\
+\scriptsize{সহকারী/ডেপুটি কমিশনার অব কাস্টমস এর পক্ষে}
+\\
+\scriptsize{কাস্টম হাউস, চট্টগ্রাম।}
+\\
+\scriptsize{{\rodt}}
+\end{center}
+\end{minipage}
+\\
+\scriptsize{{\fileno}}
+\\
+\underline{\scriptsize{অনুলিপি অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহনের জন্য প্রেরণ করা হলো}}
+\\
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০১।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{বিভাগীয় কর্মকর্তা, কাস্টমস এক্সাইজ ও ভ্যাট, (গাজীপুর বিভাগ),
+বাড়ি নং- ৩১৯,
+খন্দকার কমপ্লেক্স, নলজানী,
+চান্দানা চৌরাস্তা, জয়দেপপুর রোড,
+গাজীপুর,
+পন্যচালানটি উপরোক্ত প্রতিষ্ঠানে যথাযথভাবে
+ব্যবহার করা হচ্ছে/হয়েছে কিনা সে
+সম্পর্কিত একটি প্রতিবেদন নিম্ন স্বাক্ষরকারীর
+দপ্তরে প্রেরণ করার জন্য সংশ্লিষ্ট সার্কেলকে
+প্রয়োজনীয় নির্দেশ দানের জন্য আপনাকে
+বিশেষভাবে অনুরোধ করা হলো।
+}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০২।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{পরিচালক (নিরাপত্তা), চট্টগ্রাম বন্দর কর্তৃপক্ষ, চট্টগ্রাম (নির্ধারিত গেইট দিয়ে কন্টেইনার নির্গমন নিশ্চিত করার জন্য অনুরোধ করা হলো)।}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৩।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{টার্মিনাল ম্যানেজার, চট্টগ্রাম বন্দর কর্তৃপক্ষ, চট্টগ্রাম।}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৪।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{রাজস্ব কর্মকর্তা (জেটি কাস্টমস) স্ক্যানিং, কাস্টম হাউস, চট্টগ্রাম।}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৫।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{সহকারী রাজস্ব কর্মকর্তা, সংশ্লিষ্ট গেইট ডিভিশন/এমপিবি-২/৩, কাস্টম হাউস, চট্টগ্রাম।}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৬।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{সহকারী রাজস্ব কর্মকর্তা, {\rdepo}}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৭।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{সহকারী রাজস্ব কর্মকর্তা, (স্ক্যানার), সিপিআর/এমপিবি-২/এসজিএস অফিস, বন্দর, চট্টগ্রাম।}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৮।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{শিপিং এজেন্ট:
+{\san}, {\sad}}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{০৯।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{IMP: {\impn}
+FACTORY:{\impadd}}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\scriptsize{১০।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\scriptsize{অফিস কপি।}
+\\
+\\
+\\
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.60\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.40\linewidth}
+\begin{center}
+\scriptsize{{\robdt}}
+\\
+\footnotesize{(মোঃ জাহিদুল ইসলাম জামাল)}
+\\
+\footnotesize{রাজস্ব কর্মকর্তা (স্টাফ শাখা)}
+\\
+\scriptsize{সহকারী/ডেপুটি কমিশনার অব কাস্টমস এর পক্ষে}
+\\
+\scriptsize{কাস্টম হাউস, চট্টগ্রাম।}
+\end{center}
+\end{minipage}
+{\nfpage}
+\normalsize
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+বিষয়:\hspace{1em}\textbf{আমদানিকৃত ও শুল্কায়িত
+[{\pack}, {\good}]
+C/O. {\co}
+হতে মালামালসহ
+% container
+[{\conno}{\condn}{\conn}
+চট্টগ্রাম বন্দর হতে
+আমদানিকারকের কারখানা চত্বরে
+নিয়ে যাওয়ার অনুমতি প্রসঙ্গে।}
+\\
+\footnotesize{Vessel: {\vessel},
+ROT NO. {\rotno},
+B/L NO. \textbf{{\blno}}{\bldt}
+\\
+B/E NO. \textbf{\beno},
+DT: {\bedt},
+BANK/TREASURY NO: {\rno},
+DT: {\rdt}}
+\\
+\footnotesize{
+[{\conno}{\condn}{\conn}}
+\\
+{\consh}
+\\
+\footnotesize{
+\framebox[1.02\width]{IMP:{\impn}}
+\\
+\framebox[1.02\width]{FACTORY:{\impadd}}
+\\
+\framebox[1.02\width]{ছাড়কারী:{\cnfn},{\cnfadd}}}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+\hspace{0.0em}
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+\normalsize
+উপরোক্ত পত্র সংযোজনীসহ নথির পত্রাংশে উপস্থাপিত।
+অনুগ্রহ পূর্বক দেখা যেতে পারে।
+উপরোক্ত আমদানিকারক কর্তৃক আমদানিকৃত
+[{\conno}{\condn}{\conn}
+এর মাধ্যমে আনীত মালামাল সহ
+আমদানিকারকের কারখানা চত্বর
+{\impadd}-এ
+নিয়ে খালাস করার অনুমতি চেয়ে
+সিএন্ডএফ এজেন্ট: {\cnfn}, {\cnfadd}
+আবেদন করেছেন।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\footnotesize
+\begin{minipage}[t]{0.96\linewidth}
+আমদানিকৃত মালামাল সহ কন্টেইনার ডেলিভারী
+সংক্রান্ত বিদ্যমান স্থায়ী আদেশ নং-০৮,
+তারিখ: ২৯/০৭/০৩ খ্রি: এর আলোকে
+আমদানিকারকের অত্র প্রতিষ্ঠানটি বিনিয়োগ
+বোর্ডের আওতায় নিবন্ধিত একটি শিল্প
+প্রতিষ্ঠান। যার নিবন্ধন সংখ্যা {\impreg}।
+উক্ত স্থায়ী আদেশের আলোকে
+নিম্নোক্ত শর্তে কন্টেইনার ডেলিভারীর
+অনুমতি প্রদান করা যেতে পারে।
+\\
+\begin{minipage}[t]{0.04\linewidth}
+(ক)
+\end{minipage}
+\begin{minipage}[t]{0.92\linewidth}
+আমদানিকৃত আলোচ্য চালানের পণ্য
+জেটি কাস্টম ও এআইআর কর্তৃক শতভাগ কায়িক
+পরীক্ষা করা হয়।
+কায়িক পরীক্ষার প্রতিবেদনের আলোকে বি/ই এর
+ক্রমিক নং -১, ১৩, ১৪, ও ১৫ নং আইটেম
+খালাসকালে জেটিতে স্কেলে ওজন করে
+সঠিক প্রাপ্তি সাপেক্ষে ছাড়যোগ্য।
+পণ্যচালান
+কন্টেইনার বন্দর জেটি
+হতে স্থানান্তর কালে স্থায়ী
+আদেশ নং-০২, তারিখ: ২৯/০৮/২০১৯ ইং
+মোতাবেক (জেটি স্ক্যানিং)
+কর্মকর্তা কর্তৃক
+নিয়োজিত কর্মকর্তা
+কন্টেইনার
+নম্বর পরীক্ষা পূর্বক
+সঠিক প্রাপ্তি সাপেক্ষে
+শুল্কায়িত (ঘোষিত) মালামাল সঠিক পেলে
+ডেলিভাররীর অনুমতি
+দিবেন। সন্দেহজনক কন্টেইনার হলে
+উক্ত পণ্যচালান এ দপ্তরের AIR কর্মকর্তা
+পরীক্ষা করবেন এবং পরীক্ষায় পণ্য সঠিক পাওয়া গেলে
+তৎক্ষনাৎ খালাসের অনুমতি প্রদান করবেন।
+কোন প্রকার গড়মিল পরিলক্ষিত হলে
+কন্টেইনারসহ মালামাল ডেলিভারী কার্যক্রম স্থগিত রেখে
+তাৎক্ষনিকভাবে তা উর্দ্ধতন কর্তৃপক্ষের গোচরীভূত করবেন।
+\\
+\end{minipage}
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+আমদানিকারকের কারখানা চত্বরে মালামাল
+খালাসের পর খালি কন্টেইনার পণ্য খালাস
+পরবর্তী ৩০ (ত্রিশ) দিনের মধ্যে
+সংশ্লিষ্ট শিপিং এজেন্টের নিজস্ব কন্টেইনার
+ইয়ার্ড/ডিপোট-তে ফেরত প্রদান করবেন
+মর্মে আমাদানিকারক কর্তৃক রিস্ক বন্ড দাখিল
+করা হয়েছে।
+সংশ্লিষ্ট মালামালের শুল্কায়িত বি/ই,
+রিলিজ অর্ডার, এ্যাসেসমেন্ট নোটিশ,
+ইনভয়েস, বি/এল, প্যাকিং লিস্ট,
+ভ্যাট রেজিস্ট্রেশন, বিনিয়োগ বোর্ডের
+পত্রের ফটোকপি ইত্যাদি দাখিল করা হয়েছে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+সিএন্ডএফ এজেন্টের আবেদনের প্রক্ষিতে
+সংশ্লিষ্ট শিপি এজেন্ট:
+{\san}, {\sad}
+কর্তৃক কন্টেইনার স্থানন্তরের কোন আপত্তি নেই
+মর্মে অনাপত্তি প্রদান করা হয়েছে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+আমদানিকারকের কারখানা চত্বরে মালামাল
+খালাসের পর খালি কন্টেইনার পণ্য খালাস পরবর্তী
+৩০ (ত্রিশ) দিনের মধ্যে
+সংশ্লিষ্ট শিপিং এজেন্ট কর্তৃক প্রদত্ত
+অনাপত্তির শর্ত মোতাবেক
+স্থায়ী আদেশ নং-১৩,
+তারিখ: ০৪/১১/০৩ ইং
+অনুযায়ী শিপিং এজেন্টের মনোনীত
+কন্টেইনার ডিপো/ইয়ার্ড {\rdepo}-এ
+ফেরৎ এনে সংশ্লিষ্ট শিপিং এজেন্ট,
+কাস্টম কর্তৃপক্ষের মাধ্যমে হস্তান্তর করে
+স্থানান্তরের প্রমাণস্বরূপ ডুপ্লিকেট রিস্ক বন্ডের পিছনে
+সংশ্লিষ্ট সকল পক্ষের গৃহীত স্বাক্ষরসহ
+(রিস্ক বন্ড অবমুক্ত করার জন্য)
+স্টাফ শাখায় দাখিল করবেন।
+তাছাড়া আদেশ মোতাবেক
+সহকারী/রাজস্ব কর্মকর্তা সংশ্লিষ্ট (ডিপো) কর্তৃক
+স্বাক্ষরিত প্রতিবেদনের কপি সংযুক্ত করতে হবে।
+ইহার ভিত্তিতে আমদানিকারক কর্তৃক দেয়
+রিস্ক বন্ড বাতিল করা হবে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+উল্লেখ্য অত্র আমদানিকারকের অনুকূলে ইতিপূর্বে
+অনুমোদিত রিস্ক বন্ডের মেয়াদ উত্তীর্ণ কোন
+রিস্ক বন্ড বাতিলের অপেক্ষায় অবশিষ্ট নাই।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+বিনিয়োগ বোর্ডের প্রত্যয়ন পত্র,
+ভ্যাট রেজিষ্ট্রেশন কপি,
+আউটপাশ বি/ই এবং প্রেরিতব্য পত্রে
+আমদানিকারকের প্রতিষ্ঠানের কারখানা চত্বরের
+ঠিকানা সঠিক আছে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+এমতাবস্থায় আমদানীকারকের পক্ষে
+পেশকৃত আবেদনপত্রের অনুকূলে
+উপস্থাপিত রিস্ক বন্ডটি গ্রহণ করা যেতে পারে।
+উল্লেখ্য, রিস্ক বন্ডে-
+{\riskbondt}
+টাকার বিপরীতে
+{\riskbondg}
+টাকার নন-জুডিশিয়াল
+স্ট্যাম্পে রিস্ক বন্ড নং {\riskbondno}
+{তারিখ:\riskbonddate} দাখিল করেছেন।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.04\linewidth}
+।
+\end{minipage}
+\begin{minipage}[t]{0.96\linewidth}
+বিনিয়োগ বোর্ডের নিবন্ধন পত্র এবং
+মূসক ২.৩ নথিতে সংযুক্ত আছে।
+অবমুক্ত অবশিষ্ট নেই।
+\\
+\\
+\\
+\\
+\end{minipage}
+\normalsize
+\begin{minipage}[t]{0.6\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.2\linewidth}
+এআরও
+\end{minipage}
+\begin{minipage}[t]{0.2\linewidth}
+আরও
+\end{minipage}
+\thispagestyle{laststyle}
+
+\end{document}

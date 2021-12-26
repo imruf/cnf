@@ -1,0 +1,436 @@
+\documentclass[11pt]{article}
+\usepackage[legalpaper,
+            lmargin=1in,rmargin=1in,
+            bmargin=1in,tmargin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            % changecounternumbering=0
+           ]{latexbangla}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% header
+\chead{
+\underline{{পৃষ্ঠা - \thepage}}
+}
+% footer
+\rfoot{চলমান পৃষ্ঠা-\thepage}
+
+\fancypagestyle{laststyle}
+{
+   \fancyfoot[R]{}
+}
+
+\newcommand{\fileno}{নথি নং- এস-৫-১৬৩/স্টাফ/কাস/০৬-০৭/অংশ-২}
+\newcommand{\filenou}{\underline{নথি নং- \hspace{5em}/স্টাফ/কাস/০৬-০৭/অংশ-২}}
+\newcommand{\fdt}{\hspace*{3em} তারিখ: \hspace{2.4em} /১০/২১}
+\newcommand{\frbdt}{তারিখ: \hspace{2.4em} /১০/২১}
+\newcommand{\pack}{STC:220 BALES}
+\newcommand{\good}{RAW COTTON}
+\newcommand{\co}{IVORY COAST}
+\newcommand{\depo}{EBIL, DEPOT, CHITTAGONG}
+\newcommand{\rdepo}{....................................................................., DEPOT, CHITTAGONG}
+\newcommand{\vessel}{MV TZINI}
+\newcommand{\rotno}{2021/4696}
+\newcommand{\blno}{OOLU2119927931}
+\newcommand{\beno}{C-1635889}
+\newcommand{\bedt}{11.10.2021}
+\newcommand{\rno}{\hspace{5em} / \hspace{14.3em}}
+\newcommand{\rdt}{\hspace{3em}-10-21}
+\newcommand{\conno}{$\boldsymbol{02}$}
+\newcommand{\conn}{(HCL)] FCL Container}
+\newcommand{\cond}{$\boldsymbol{\times 40^\prime}$}
+% \newcommand{\cond}{$\boldsymbol{\times 40^\prime\hspace{1em}\&\hspace{1em} 05\times 40^\prime}$}
+\newcommand{\impn}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\cnfn}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\cnfadd}{92,HIGH LEVEL ROAD, LALKHAN BAZAR, CHITTAGONG}
+\newcommand{\impadd}{Shafipur, Kaliakoir, Gazipur, 1751, BD}
+% smml
+% \newcommand{\impreg}{২৩১৩৯৫০৬১৮০-এইচ, তারিখ: ০৯/০১/২০১৩}
+%jml
+\newcommand{\impreg}{এল-২৯৩০১৩০১৩৪৩১-এইচ, তারিখ: ০৯/০১/২০১৩}
+\newcommand{\san}{CONTINENTAL TRADERS (BD) LIMITED}
+\newcommand{\sad}{IIUC Tower (9th floor), Plot \#09, Agrabad C/A, Sk. Mujib Road, Chittagong-4100.}
+\newcommand{\rodt}{\hspace*{3.0em} তারিখ: \hspace{3.5em}/১০/২০২১ ইং}
+\newcommand{\robdt}{\hspace*{3.0em} \hspace{3.5em}/১০/২০২১ ইং}
+\newcommand{\consh}{
+\noindent{
+\begin{tabular}{|c|c|}
+\hline
+(01) \textbf{OOCU} {\cond}
+&
+(02) \textbf{OOCU} {\cond}
+\\
+\hline
+\end{tabular}
+}
+}
+
+\begin{document}
+\begin{minipage}[t]{0.56\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.44\linewidth}
+{\filenou}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+০১।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+বি/ই রেজি: নং- {\beno}, {\bedt}
+নথিভূক্ত করে পরবর্তী কার্যক্রমের জন্য উপস্থাপন করা হলো।
+\\
+\\
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.40\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{.60\linewidth}
+\textbf{এ.আর.ও}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+০২।
+\end{minipage}
+\begin{minipage}[t]{0.35\linewidth}
+\underline{\textbf{আমদানিকৃত পণ্য চালানের
+মৌলিক তথ্যঃ}}
+\end{minipage}
+\begin{tabular}{lll}
+& \textbf{এ.আর.ও} \\
+% ns2
+০২ । \underline{\textbf {আমদানিকৃত পণ্য চালানের
+মৌলিক তথ্যঃ}} & \\
+\hspace{2em} (ক) বি/ই রেজি: নং ও তারিখ
+% cno
+& : \textbf{C-1270625}
+\hspace{1em} DT:07-082021 \\
+\hspace{2em} (খ) আমদানিকারকের নাম, ঠিকানা
+ও BIN নম্বর
+% ac
+& : \textbf{JAMUNUA ELECTRONICS
+\& AUTOMOBILES LTD} \\
+& \hspace{4pt} SINABHA, KALIAKAIR PS; GAZIPUR \\
+& \hspace{4pt} 1750, BANGLADESH \\
+& \hspace{4pt} BIN NO. 000146478-0103 \\
+\hspace{2em} (গ) সিএন্ডএফ এজেন্টের নাম, ঠিকানা
+ও AIN নম্বর
+% ca
+& : \textbf{SHAMEEM SPINNING MILLS LIMITED} \\
+& \hspace{4pt} 92, HIGH LAVEL ROAD, LALKHAN BAZAR \\
+& \hspace{4pt} CHITTAGONG \\
+%c ain
+& \hspace{4pt} AIN NO. 301 08 3417 \\
+% lc
+\hspace{2em} (ঘ) এল/সি নং ও তারিখ
+& : 00000088821020076
+\hspace{1em} DT:07-082021 \\
+\hspace{2em} (ঙ) লিয়েন ব্যাংকের নাম
+% bank
+& : ISLAMI BANK BANGLADESH LIMITED \\
+\hspace{2em} (চ) এলসিএ নং ও তারিখ
+% lca
+& : 332636
+\hspace{1em} DT:07-082021 \\
+\hspace{2em} (ছ) বি/এল নং ও তারিখ
+% bl
+& : SHWWSE210714406
+\hspace{1em} DT:07-082021 \\
+\hspace{2em} (জ) বাণিজ্যিক ইনভয়েজ নং ও তারিখ
+% invoice
+\hspace{2em} (ঝ) সিআরএফ নং ও ইস্যুর তারিখ
+% crf
+& : NON CRF \\
+\hspace{2em} (ঞ) পণ্যের বিবরণ
+% goods
+& : ALUMINIUM PIPE COPPER PIPE CAPILLARY PIPE \\
+\hspace{2em} (ট) পণ্যের পরিমাণ (একক সহ)
+% wt
+& : 35PKGS = 19605.30 KGS \\
+\hspace{2em} (ঠ) পণ্যের এইচ.এস.কোড
+% hs
+& : 7608.10.00 \\
+\hspace{2em} (ড) পণ্যের মূল্য
+% usd
+& : US\$: 1,13,716.76 \\
+\hspace{2em} (ঢ) কান্ট্রি অব অরিজিন
+% co
+& : CHINA \\
+\hspace{2em} (ণ) কান্ট্রি অব শিপমেন্ট
+% cos
+& : CHINA \\
+\hspace{2em} (ত) জাহাজের নাম
+% carrier
+& : ULANGA \\
+\hspace{3.8em} পালা নং, বি/এল নং
+% rotation
+& : ROT.NO.2021/3477,B/L NO. SHWWSE210714406 \\
+\hspace{2em} (থ) মেনিফিস্ট নং
+% manifest
+& : 2021 / 3477 \\
+\end{tabular}
+\\
+\\
+% ns3
+০৩ । \underline{\textbf{শুল্কায়ন সেকশনের পর্যালোচনাঃ-}}
+
+\begin{description}
+ \item \hspace{1em} (ক)
+ \underline{\textbf{আমদানি দলিল পত্র যাচাইঃ-}}
+পণ্য চালান খালাসের জন্য নিম্নবর্ণিত দলিলাদিসহ বি/ই দাখিল করা
+হয়েছে যা সংশ্লিষ্ট ব্যাংকের অথরাইজ কর্মকর্তা কর্তৃক সত্যায়িত।
+পরীক্ষান্তে এসব কাগজপত্র যথাযথ আছে বলে প্রতীয়মান হয়।
+\\
+(১) এল.সি এবং এল.সি.এ ফরম।
+\\
+(২) ইনভয়েস।
+\\
+(৩) প্যাকিং লিস্ট।
+\\
+(৪) বি/এল।
+\\
+(৫) কান্ট্রি অব অরিজিন সনদ।
+
+\item \hspace{1em} (খ)
+\underline{\textbf{আমদানি যোগ্যতা যাচাইঃ-}}
+প্রচলিত আমদানিনীতি আদেশ পর্যালোচনায় দেখা যায় যে, পণ্যগুলি অবাধে আমদানিযোগ্য।
+আলোচ্য চালানের ক্ষেত্রে আমদানিনীতি আদেশের প্রযোজ্য অন্যান্য শর্ত (কান্ট্রি অব অরিজিন, রেজিঃ
+সার্টিফিকেট ইত্যাদি) প্রতিপালিত হয়েছে।
+\item \hspace{1em} (গ)
+\underline{\textbf{কায়িক পরীক্ষার প্রতিবেদন পর্যালোচনাঃ-}}
+আলোচ্য পণ্য চালানটি ১০০\% কায়িক পরীক্ষার জন্য নির্বাচিত। কায়িক পরীক্ষায় ইনভয়েস,
+প্যাকিং লিস্ট মোতাবেক সঠিক পাওয়া যায়। কায়িক পরীক্ষার প্রতিবেদন নথির যোগাযোগ অংশে
+রক্ষিত আছে, দয়া করে দেখা যেতে পারে।
+\item \hspace{1em} (ঘ)
+\underline{\textbf{রাসায়নিক পরীক্ষা সংক্রান্ত মন্তব্যঃ-}}
+প্রযোজ্য নয়।
+\item \hspace{1em} (ঙ)
+\underline{\textbf{এইচ.এস.কোড সঠিকতা যাচাইঃ-}}
+ইনভয়েস প্রত্যায়িত এইচ.এস.কোড দি কাস্টমস্ এ্যাক্ট ১৯৬৯ এর FIRST SCHEDULE ও
+EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আদেশ ইত্যাদির আলোকে পরীক্ষা করা হলো।
+প্রত্যায়িত এইচ.এস.কোড যথাযথ আছে।
+
+\item \hspace{1em} (চ)
+\underline{\textbf{রেয়াতী হার বা বিশেষ মওকুফ সংক্রান্তঃ-}}
+\\
+(১) জাতীয় রাজস্ব বোর্ড পত্র নং-০৮.০১.০০০০.০৬৮.১৮.০০৪.১৭/১৬৯(৩),
+তারিখ-২৭/০৬/২০২১ খ্রিঃ এর মাধ্যমে আলোচ্য প্রতিষ্ঠান কর্তৃক উপকরণ ও যন্ত্রাংশ
+আমদানির ক্ষেত্রে আমদানি পর্যায়ে আরোপনীয় সমুদয় মূল্য সংযোজন কর (আগাম কর ব্যতিত)
+ও সম্পূরক শুল্ক (প্রযোজ্য ক্ষেত্রে) বোর্ডের সিদ্ধান্তক্রমে অব্যাহতি প্রদান করা হয়েছে।
+\\
+(২) জাতীয় রাজস্ব বোর্ডের পত্র নথি নং-০৮.০১.০০০০.০৩৪.০২.৩০১.১৯-৪৭
+তাং-১২/০৬/২০২১ খ্রিঃ এর মাধ্যমে আলোচ্য প্রতিষ্ঠান কর্তৃক উপকরণ ও যন্ত্রাংশ
+আমদানির ক্ষেত্রে পরিশোধযোগ্য মূল্যের উপর ০.৮৩\% হারে উৎসে অগ্রিম আয়কর
+কর্তন হবে।
+\\
+(৩) মূসক-৪.৩ অনুযায়ি প্রতিষ্ঠানটি Refrigerator উৎপাদনকারি প্রতিষ্ঠান হওয়ায়
+এসআরও-১১৪-আইন/২০২১/০৩/কাস্টমস, তারিখ: ২৪/০৫/২০২১ ইং এর
+আওতায় রেয়াতী সুবিধা প্রাপ্ত।
+\\
+জাতীয় রাজস্ব বোর্ডের পত্র (১) ও (২) এর আলোকে পণ্য চালানটির প্রথম আইটেম
+এর ক্ষেত্রে সিপিসি ৪০০০-৬৬১ প্রযোজ্য এবং জাতীয় রাজস্ব বোর্ডের পত্র নং-(১)
+এবং পরবর্তী আইটেম গুলোতে এসআরও-১১৪-আইন/২০২১/০৩/কাস্টমস,
+তারিখ: ২৪/০৫/২০২১ ইং এর আওতায় সিপিসি ৪০০০-৪০৯ প্রযোজ্য
+\item \hspace{1em} (ছ)
+\underline{\textbf{অভিযোগ সংক্রান্তঃ-}} এ চালানে জাতীয় রাজস্ব বোর্ডের/গোয়েন্দা
+সংস্থার অভিযোগ পাওয়া যায় নাই।
+\item \hspace{1em} (জ)
+\underline{\textbf{ন্যায় নির্ণয় সংক্রান্তঃ-}} প্রযোজ্য নয়।
+\item \hspace{1em} (ঝ)
+\underline{\textbf{উল্লেখ করার মত প্রাসঙ্গিক অন্যান্য বিষয়ঃ-}} আমদানিকারক
+মূসক ২.৩, ৪.৩ অন-লাইন আইআরসি কপি, ভ্যাট রিটার্ণ এবং ভ্যাট প্রত্যয়নপত্র দাখিল
+করেছেন।
+\end{description}
+%ns4
+০৪ । \underline{\textbf{শুল্কায়ন সম্পর্কিত প্রস্তাবঃ-}}
+শতভাগ কায়িক পরীক্ষার প্রতিবেদন এবং পণ্য চালান সংক্রান্ত আমদানি দলিলপত্র
+ইনভয়েস পর্যালোচনা পূর্বক পণ্যের বর্ণনা, পরিমাণ, এইচ.এস.কোড, ঘোষিত মূল্য,
+সমসাময়িককালের অনুরূপ পণ্যের একক মূল্যসহ নিম্নের ছকে শুল্কায়নের প্রস্তাব উপস্থাপন
+করা হলো:
+\\
+% tax table
+\noindent
+\begin{longtable}{|c|c|c|c|c|c|c|c|}
+
+\hline
+\textbf{
+\scriptsize{
+\makecell{
+SL \\ NO
+}
+}
+}
+&
+\textbf{
+\scriptsize{
+\makecell{
+DESCRIPTION OF GOODS
+}
+}
+}
+&
+\textbf{
+\scriptsize{
+\makecell{
+QTY
+}
+}
+}
+& \textbf{
+\scriptsize{
+\makecell{
+DECLARED \\ H.S CODE
+}
+}
+}
+&
+\textbf{
+\scriptsize{
+\makecell{
+PROPOSED \\ H.S CODE
+}
+}
+}
+&
+\textbf{
+\scriptsize{
+\makecell{
+ DECLARED \\ VALUE \\ (USD/KG)
+}
+}
+}
+&
+\textbf{
+\scriptsize{
+\makecell{
+ DATABASE \\ VALUE \\ (USD/KG) \\ OF \\
+ ASYCUDA \\ WORLD \\ SYSTEM
+}
+}
+}
+&
+\textbf{
+\scriptsize{
+\makecell{
+ PROPOSED \\ VALUE \\ (USD/KG)
+}
+}
+} \\
+\hline
+% row
+\scriptsize{
+\makecell{
+01
+}
+}
+&
+\scriptsize{
+\makecell{
+02
+}
+}
+&
+\scriptsize{
+\makecell{
+03
+}
+}
+&
+\scriptsize{
+\makecell{
+04
+}
+}
+&
+\scriptsize{
+\makecell{
+05
+}
+}
+&
+\scriptsize{
+\makecell{
+06
+}
+}
+&
+\scriptsize{
+\makecell{
+07
+}
+}
+&
+\scriptsize{
+\makecell{
+08
+}
+} \\
+\hline
+\end{longtable}
+%ns5
+\underline{\textbf{শুল্কায়নযোগ্য মূল্য নিরুপণঃ-}} (ক) পন্য চালানটির
+দাখিলকৃত দলিলাদি বিশ্লেষণ করে দেখা যায় পণ্যের ঘোষিত মূল্য সমসাময়িককালের
+শুল্কায়ন মূল্য হতে অনেক কম। আমদানিকারক তার মনোনীত সি এন্ড এফ এজেন্ট
+বিল অব এন্ট্রির সাথে শুল্ক মূল্যায়ন (আমদানি পন্যের মূল্য নির্ধারণ) বিধিমালা,
+২০০০ (এসআর নং-৫৭/২০০০) এর বিধি-১১(১) (ক) অনুযায়ী কোন মূল্য ঘোষনা
+ফরম দাখিল করেননি। কিন্তু উক্ত বিধিমালার বিধি ১১(১) (খ) অনুযায়ি প্রস্তুতকারি
+উৎপাদনকারির নিকট হতে সংগৃহীত ইনভয়েসসহ অন্য কোন বিবৃতি, তথ্য অথবা দলিল
+যা আমদানিকৃত পণ্যের মূল্য নির্ধারণের জন্য আবশ্যক ছিল তা দাখিল করেননি।
+এছাড়া ইনভয়েস, প্যাকিং লিস্ট, এলসি, এলসিএ ফরম, প্রোফরমা ইনভয়েস ব্যতীত নিরপেক্ষ
+উৎস হতে পণ্যের মূল্যের স্বপক্ষে অন্য কোন দলিলও দাখিল করেননি বিধায় ঘোষিত মূল্যকে
+বিনিময় মূল্য (Transaction Value) হিসেবে গ্রহন করার কোন সুযোগ নেই।
+\\
+\\
+%ns5
+০৫ । আমদানিকারক Industrial IRC Holder উৎপাদনকারি (Manufacturing)
+হিসাবে হালনাগাদ IRC মূসক-৪.৩; মূসক-২.৩ ও ১৩ ডিজিটের নিবন্ধন পত্র
+দাখিল করেছেন। মূসক-২.৩ অনুযায়ী প্রতিষ্ঠানের কার্যক্রম:
+Manufacturing Services Import Export
+উৎপাদনকারি প্রতিষ্ঠান হিসাবে মূসক-৪.৩ তে আমদানি পণ্যগুলো
+অন্তর্ভূক্ত রয়েছে। মূসক-২.৩ অনুযায়ি প্রতিষ্ঠানটি উৎপাদনকারি হিসেবে
+নিবন্ধিত।
+\\
+\\
+%ns6
+০৬ । (১) জাতীয় রাজস্ব বোর্ড পত্র নং-০৮.০১.০০০০.০৬৮.১৮.০০৪.১৭/১৬৯(৩),
+তারিখ-২৭/০৬/২০২১ খ্রিঃ এর মাধ্যমে আলোচ্য প্রতিষ্ঠান কর্তৃক উপকরণ ও যন্ত্রাংশ
+আমদানির ক্ষেত্রে আমদানি পর্যায়ে আরোপনীয় সমুদয় মূল্য সংযোজন কর (আগাম কর ব্যতিত)
+ও সম্পূরক শুল্ক (প্রযোজ্য ক্ষেত্রে) বোর্ডের সিদ্ধান্তক্রমে অব্যাহতি প্রদান করা হয়েছে।
+\\
+(২) জাতীয় রাজস্ব বোর্ডের পত্র নথি নং-০৮.০১.০০০০.০৩৪.০২.৩০১.১৯-৪৭
+তাং-১২/০৬/২০২১ খ্রিঃ এর মাধ্যমে আলোচ্য প্রতিষ্ঠান কর্তৃক উপকরণ ও যন্ত্রাংশ
+আমদানির ক্ষেত্রে পরিশোধযোগ্য মূল্যের উপর ০.৮৩\% হারে উৎসে অগ্রিম আয়কর
+কর্তন হবে।
+\\
+\\
+%ns7
+০৭ । এমতাবস্থায়, নোটানুচ্ছেদ-৪ এ উল্লেখিত ছকের প্রস্তাবিত মূল্যে,
+এইচ.এস.কোড ও সিপিসি তে চালানটি শুল্ক মূল্যায়ন বিধিমালা ২০০০
+এর বিধি ০৪ ও ০৫ মোতাবেক শুল্কায়ন প্রস্তাব অনুমোদনের জন্য পেশ
+করা হলো।
+\\
+\\
+\\
+\\
+সদয় অবগতি ও আদেশার্থে উপস্থাপন করা হলো।
+
+\thispagestyle{laststyle}
+
+\end{document}
+

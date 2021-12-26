@@ -1,0 +1,283 @@
+\documentclass[12pt]{article}
+\usepackage[legalpaper,
+            lmargin=1in,rmargin=1in,
+            bmargin=1in,tmargin=1in,includefoot]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            % changecounternumbering=0
+           ]{latexbangla}
+
+\renewcommand{\thepage}{\ifnum\value{page}<10 ০\fi\arabic{page}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% header
+\chead{
+\underline{{পৃষ্ঠা নং - \thepage}}
+}
+
+% footer
+\rfoot{ চলমান পৃষ্ঠা-\thepage}
+
+\fancypagestyle{laststyle}
+{
+   \fancyfoot[R]{}
+}
+
+\newcommand{\fileno}{নথি নং-২৫/বিবিধ/সেকশন-৮(এ)/২০২১-২০২২}
+% \newcommand{\nbrl}{নং-০৮.০১.০০০০.০৮০.০৫.০০১.১২(অংশ-১)/১৩২(১), তারিখ-২৩/০৭/২০১৯ খ্রি:}
+% \newcommand{\nbrl}{নং-০৮.০১.০০০০.০৮০.০৫.০০১.১২(অংশ-১)/১৩২(২), তারিখ-২৩/০৭/২০১৯ খ্রি:}
+\newcommand{\nbrl}{নং-০৮.০১.০০০০.০৮০.০৫.০০১.১২(অংশ-১)/১৭২, তারিখ-১৭/১১/২০১৯ খ্রি:}
+% \newcommand{\tvat}{১৪,০১,২৯,৯২৪.২৪ (চৌদ্দ কোটি এক লক্ষ ঊনত্রিশ হাজার নয়শত চব্বিশ টাকা চব্বিশ পয়সা) টাকা}
+\newcommand{\tvat}{২,১৩,৯৫,৯৪০.৩৩ (দু্ই কোটি তের লক্ষ পঁচানব্বই হাজার নয়শত চল্লিশ টাকা তেত্রিশ পয়সা) টাকা}
+\newcommand{\vat}{২০,৩৭,১২৮.৮৭ (বিশ লক্ষ সাঁইত্রিশ হাজার একশত আটাশ টাকা সাতাশি পয়সা) টাকা}
+% \newcommand{\tl}{০১/০৭/২০১৬ খ্রি: হতে ৩০/০৬/২০১৭ খ্রি:}
+\newcommand{\tl}{০৬/০৬/২০১৭ খ্রি: হতে ৩০/০৬/২০১৭ খ্রি:}
+\newcommand{\cno}{৭৪৮৯৫৬}
+\newcommand{\dt}{০৮/০৬/২০১৭}
+
+
+\begin{document}
+\begin{minipage}[t]{0.59\linewidth}
+\hspace{0.5em}
+\end{minipage}
+\begin{minipage}[t]{1\textwidth}
+% fileno
+\underline{{\fileno}}
+\end{minipage}
+\\
+% ns1
+\begin{minipage}[t]{0.05\linewidth}
+০১।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+আমদানিকারক
+Jamunua Electronics \& Automobiles Ltd
+হতে প্রাপ্ত
+পত্র নং-যমুনা/কাস-চট্ট/মূ.অ/২০১৯/০৯,
+তারিখ: ২৪/০৭/২০১৯ খ্রিঃ
+এবং জাতীয় রাজস্ব বোর্ডের পত্রসহ সংযুক্ত
+দলিলাদি নথির অপর পাশে রক্ষিত আছে।
+দয়া করে দেখা যেতে পারে।
+\\
+\\
+পত্রটি মহামান্য সুপ্রীম কোর্টের আপীল বিভাগের
+Contempt Petition No-07/2017
+এর গত ০৮/০৬/২০১৭ ইং তারিখের
+রায় আদেশের নির্দেশনা মোতাবেক
+VAT বাবদ
+% tvat
+{\tvat} রিফান্ড প্রদান প্রসংগীয়।
+সদয় অবগতি ও পরবর্তী কার্যক্রমের জন্য
+নথি উপস্থাপন করা হলো।
+\end{minipage}
+\\
+\\
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+সহকারী
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+আরও
+\end{minipage}
+\\
+\\
+\\
+\\
+\\
+\\
+% ns2
+\begin{minipage}[t]{0.05\linewidth}
+০২।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+নথির পত্রাংশে রক্ষিত আমদানিকারক
+Jamunua Electronics \& Automobiles Ltd
+এর আবেদন পত্র এবং আবেদন পত্রের সাথে সংযুক্ত
+জাতীয় রাজস্ব বোর্ডের পত্র
+% nbr
+{\nbrl} ও মাননীয় সুপ্রীম কোর্ট কর্তৃক প্রচারিত
+Contempt Petition No:07/2017
+সদয় দেখা যেতে পারে।
+\end{minipage}
+\\
+\\
+\\
+% ns3
+\begin{minipage}[t]{0.05\linewidth}
+০৩।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+আমদানিকারক
+Jamunua Electronics \& Automobiles Ltd
+বিজ্ঞ কমিশনার মহোদয় বরাবর
+একখানা আবেদন পত্র দাখিল
+করেছেন। আবেদনে উল্লেখ করেন যে,
+জাতীয় রাজস্ব বোর্ড পত্র
+% nbr
+{\nbrl} এর মাধ্যমে
+Contempt Petition No:07/2017
+এর আদেশের প্রেক্ষিতে মূল্য সংযোজন কর
+বাবদ আদায়কৃত
+% tvat
+{\tvat} ফেরত প্রদানের আবেদন জানান।
+আমদানিকারকের পত্রটি নথির যোগাযোগ
+অংশে রক্ষিত আছে।
+সদয় দেখা যেতে পারে।
+\end{minipage}
+\\
+\\
+\\
+% ns4
+\begin{minipage}[t]{0.05\linewidth}
+০৪।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+Contempt Petition No. 07/2017
+এর বিপরীতে মহামান্য সুপ্রীম কোর্টের
+আপীলাত ডিভিশন কর্তৃক প্রদত্ত রায়ের
+মাধ্যমে নিম্নোক্ত নির্দেশন প্রদান করেন-
+
+
+\hspace{1em}``We direct the NBR
+to give effect to the direction
+of this Division
+dated 13.02.2017
+at once and refund the VAT
+and Advance Income Tax
+of the aforesaid amount already
+collected/received from the
+petitioners, as claimed, during
+the period up to 30.06.2017,
+which was exempted by the
+High Court Division, as per
+aforesaid SROs, as well as by this
+Division, to the  petitioners
+forthwith. With these observations
+and directions this contempt
+petition is disposed of''
+\end{minipage}
+\\
+\\
+\\
+% ns5
+\begin{minipage}[t]{0.05\linewidth}
+০৫।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+জাতীয় রাজস্ব বোর্ড পত্র
+% nbr
+{\nbrl} তে সময়
+% time
+{\tl} এর মাধ্যমে মূল্য সংযোজন কর বাবদ
+% tvat
+{\tvat} ফেরতের বিষয়ে পরবর্তী
+আইনানুগ কার্যক্রম গ্রহণের জন্য
+নির্দেশক্রমে অনুরোধ করা হয়েছে।
+আমদানিকারকের আবেদনের প্রেক্ষিতে শুল্কায়ন
+% section
+সেকশন-৮(এ) তে দাখিলকৃত/শুল্কায়িত
+বি/ই এবং আমদানিকারকের
+পত্রের সাথে সংযুক্ত বিল অব এন্ট্রি
+পর্যালোচনায় দেখা যায়,
+পত্রে উল্লিখিত বি/ই সমূহের
+মধ্যে আলোচ্য চালানের
+% cno
+\textbf{বিল অব এন্ট্রি নং সি-{\cno} তারিখ: {\dt} খ্রি:} অন্তর্ভূক্ত রয়েছে।
+\end{minipage}
+\\
+\\
+\\
+% ns6
+\begin{minipage}[t]{0.05\linewidth}
+০৬।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+Contempt Petition No. 07/2017
+এর আদেশের প্রেক্ষিতে পরবর্তী
+করণীয় বিষয়ে এ দপ্তরের আইন
+উপদেষ্ঠার মতামত কামনা করা হলে এ দপ্তরের
+বিজ্ঞ আইন উপদেষ্ঠা মহোদয়
+% ref file
+\textbf{নথি নং-এস২-৮০/বিবিধ/সেকশন-৮(এ)/১৯-২০}
+-এর নোট অনুচ্ছেদ-৮ এ নিম্নোক্ত মতামত প্রদান করেন-
+
+
+\hspace{1em}``মাননীয় আপীল বিভাগের
+Contempt Petition No. 07/2017
+নং মামলার ০৮/০৬/২০১৭ খ্রি: তারিখের
+আদেশ/রায়ের আলোকে আহরিত ভ্যাট বাবদ
+% tvat
+{\tvat} পিটিশনার
+Jamunua Electronics \& Automobiles Ltd
+এন্ড অন্যান্য বরাবর রিফান্ড
+দ্রুত করা আবশ্যক।''
+\end{minipage}
+\newpage
+\begin{minipage}[t]{0.59\linewidth}
+\hspace{0.5em}
+\end{minipage}
+\begin{minipage}[t]{1\textwidth}
+% fileno
+\underline{{\fileno}}
+\end{minipage}
+% ns7
+\begin{minipage}[t]{0.05\linewidth}
+০৭।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+Contempt Petition No. 07/2017
+এর প্রেক্ষিতে বিজ্ঞ আইন উপদেষ্ঠা মহোদয়ের
+মতামতের প্রেক্ষিতে
+% ref file
+\textbf{নথি নং-এস২-৮০/বিবিধ/সেকশন-৮(এ)/১৯-২০}
+এবং সমজাতীয় অন্যান্য নথির
+রিফান্ড প্রদানের প্রয়োজনীয় ব্যবস্থা গ্রহণের
+জন্য নথির ছায়ানথি সেকশনে
+সংরক্ষণপূর্বক মূল নথি রিফান্ড
+শাখায় প্রেরণের প্রস্তাব করা হলে উল্লিখিত নথির
+নোট অনুচ্ছেদ-১৩ এ বিজ্ঞ কমিশনার মহোদয় অনুমোদন
+করেন (নোটাংশের ফটোকপি নথির পত্রাংশে রক্ষিত)।
+\end{minipage}
+\\
+\\
+\\
+% ns8
+\begin{minipage}[t]{0.05\linewidth}
+০৮।
+\end{minipage}
+\begin{minipage}[t]{1\linewidth}
+আলোচ্য চালানের
+% cno
+\textbf{(বিল অব এন্ট্রি নং সি-{\cno} তারিখ: {\dt} খ্রি:)} মূল্য সংযোজন কর বাবদ
+% vat
+% ref file
+{\vat} \textbf{নথি নং-এস২-৮০/বিবিধ/সেকশন-৮(এ)/১৯-২০
+এর নোট অনুচ্ছেদ-১৩} এ বিজ্ঞ কমিশনার মহোদয়ের
+অনুমোদন মোতাবেক আলোচ্য চালানের
+বিপরীতে
+% vat
+{\vat} রিফান্ড প্রদানের প্রয়োজনীয় ব্যবস্থা গ্রহণের জন্য
+নথির ছায়ানথি সেকশনে সংরক্ষন পূর্বক
+মূল নথি রিফান্ড শাখায় প্রেরণ করা যেতে পারে।
+\end{minipage}
+
+
+
+\thispagestyle{laststyle}
+
+\end{document}
