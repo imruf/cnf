@@ -1,0 +1,1814 @@
+\documentclass[12pt]{article}
+\usepackage[legalpaper,
+            lmargin=1in,rmargin=0.5in,
+            bmargin=0.5in,tmargin=1in,includefoot]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[banglamainfont=Kalpurush,
+            banglattfont=SolaimanLipi,
+            % feature=1,
+            % changecounternumbering=0
+           ]{latexbangla}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% header
+\chead{
+\underline{{পৃষ্ঠা - \thepage}}
+\\
+}
+\rhead{{\filenou}}
+% footer
+% \rfoot{চলমান পৃষ্ঠা-\thepage}
+
+\fancypagestyle{laststyle}
+{
+   \fancyfoot[R]{}
+}
+
+\newcommand{\fileno}{নথি নং - ২১৬৯/এপি/সেকশন-৭(বি)/২০২১-২০২২}
+\newcommand{\filenou}{\underline{\fileno}}
+\newcommand{\beno}{C-1890763}
+\newcommand{\bedt}{24.11.2021}
+\newcommand{\lcno}{0000174121020247}
+\newcommand{\lcdt}{16.09.2021}
+\newcommand{\lienbank}{AGRANI BANK LTD.}
+\newcommand{\lcano}{128274}
+\newcommand{\lcadt}{{\lcdt}}
+\newcommand{\invno}{BST2021101801}
+\newcommand{\invdt}{18.10.2021}
+\newcommand{\blno}{SHWWSE211018213}
+\newcommand{\bldt}{25.10.2021}
+\newcommand{\good}{CONVEYOR BELT}
+\newcommand{\pkg}{1859.50 KGS}
+\newcommand{\product}{}
+\newcommand{\crf}{NON CRF}
+\newcommand{\crfdt}{}
+\newcommand{\hscode}{4010.12.00, 8482.80.00, 8448.49.00, 8483.40.00 Etc.}
+\newcommand{\price}{US\$ 66,921.70}
+\newcommand{\co}{CHINA}
+\newcommand{\coship}{HONG KONG}
+\newcommand{\vessel}{MV. MCC TAIPEI}
+\newcommand{\ssml}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\ssmla}{SHAFIPUR, KALIAKAIR
+\\
+GAZIPUR-1751, BANGLADESH.}
+\newcommand{\jsml}{JAMUNA SPINNING MILLS LTD.}
+\newcommand{\jsmla}{SHAFIPUR, KALIAKAIR
+\\
+GAZIPUR-1751, BANGLADESH.}
+\newcommand{\jdl}{JAMUNA DENIMS LTD.}
+\newcommand{\jdla}{SHAFIPUR, KALIAKAIR
+\\
+GAZIPUR-1751, BANGLADESH.}
+\newcommand{\scml}{SHAMEEM COMPOSITE MILLS LTD.}
+\newcommand{\jeal}{JAMUNA ELECTRONICS \& AUTOMOBILES LTD.}
+\newcommand{\jdwl}{JAMUNA DENIMS \& WEAVING LTD.}
+\newcommand{\htf}{HOORAIN HTF LTD.}
+\newcommand{\htfa}{BEJURA, SOUTH BEJURA, MADHABPUR,
+\\
+HOBIGONJ-3331, BANGLADESH
+}
+\newcommand{\tdj}{M/S THE DAILY JUGANTOR}
+\newcommand{\tdja}{Ka-244, Kuril, Progati Sarani, Vatara PS
+\\
+Dhaka-1229,Bangladesh}
+
+\newcommand{\impn}{\htf}
+\newcommand{\impadd}{\htfa}
+\newcommand{\impbin}{000146478-0103}
+\newcommand{\impoldbin}{000146478}
+\newcommand{\cnfn}{SHAMEEM SPINNING MILLS LTD.}
+\newcommand{\cnfadd}{92, HIGH LEVEL ROAD
+\newline
+LALKHAN BAZAR, CHITTAGONG}
+\newcommand{\cnfain}{301 08 3417}
+\newcommand{\ircno}{আইআরসি নং - ২৬০৩২৬১২০৪২৬৭২০}
+\newcommand{\ircrenewdt}{৩০/০৬/২০২২ ইং}
+\newcommand{\musokr}{সেপ্টেম্বর-২১}
+\newcommand{\menifest}{2021/5230}
+\newcommand{\srofs}{এসআরও নং - ৫৭-আইন/২০০০/১৮২১/শুল্ক}
+\newcommand{\srofsd}{তারিখ: ২৩/০২/২০০০ খ্রি:}
+\newcommand{\sroooth}{এসআরও নং -১১৩-আইন/০২/কাস্টমস}
+\newcommand{\srooothd}{তারিখ: ২৪/০৫/২০২১ খ্রি:}
+\newcommand{\srooof}{এসআরও নং -১১৪-আইন/২০২১/০৩/কাস্টমস}
+\newcommand{\srooofd}{তারিখ: ২৪/০৫/২০২১ খ্রি:}
+\newcommand{\srooot}{এসআরও নং -১২০-আইন/২০২১/০৯/কাস্টমস}
+\newcommand{\sroootd}{তারিখ: ২৪/০৫/২০২১ খ্রিঃ}
+\newcommand{\srotsz}{এসআরও নং - ৩৬০-আইন/২০১৩/২৪৬৮/কাস্টমস}
+\newcommand{\srotszd}{তারিখ: ২৫/১১/২০১৩ খ্রি:}
+\newcommand{\nbrosnt}{জাতীয় রাজস্ব বোর্ডের পত্র নং - ০৮.০১.০০০০.০৬৮.১৮.০০৪.১৭/১৬৯(৩)}
+\newcommand{\nbrosntd}{তারিখ: ২৭/০৬/২০২১ খ্রি:}
+\newcommand{\nbrfs}{জাতীয় রাজস্ব বোর্ডের পত্র নং - ০৮.০১.০০০০.০৩৪.০২.৩০১.১৯-৪৭}
+\newcommand{\nbrfsd}{তারিখ: ১২/০৭/২০২১ খ্রি:}
+\newcommand{\cpc}{(সিপিসি ৪০০০/৪০৯)}
+\newcommand{\taxtab}{
+\begin{longtable}{|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{
+\makecell{
+ক্রঃ \\ নং
+}
+}
+&
+\textbf{
+\makecell{
+পণ্যের বর্ণনা
+}
+}
+&
+\textbf{
+\makecell{
+পরিমাণ
+}
+}
+& \textbf{
+\makecell{
+ইনভয়েস
+ঘোষিত
+\\
+এইচএসকোড
+\\
+(শুল্কহারসহ)
+}
+}
+&
+\textbf{
+\makecell{
+প্রকৃত
+\\
+এইচএসকোড
+\\
+(শুল্কহারসহ)
+}
+}
+&
+\textbf{
+\makecell{
+ইনভয়েস
+\\
+প্রত্যায়িত
+\\
+একক মূল্য
+\\
+(US\$)
+}
+}
+&
+\textbf{
+\makecell{
+সমসাময়িক
+কালের
+\\
+অভিন্ন/অনুরুপ
+\\
+পণ্যের
+\\
+একক মূল্য
+(US\$)
+}
+}
+&
+\textbf{
+\makecell{
+প্রস্তাবিত
+\\
+একক মূল্য
+\\
+(US\$)
+}
+} \\
+\hline
+% row
+\makecell{
+01
+}
+&
+\makecell{
+CONVEYOR BELT
+\\
+L-32.9m, W-2m
+\\
+C/O. CHINA
+}
+&
+\makecell{
+40.00
+\\
+KGS
+}
+&
+\makecell{
+4010.12.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+4010.12.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+559.30
+\\
+13.98/KG
+}
+&
+\makecell{
+US\$
+\\
+11.71/KG
+\\
+DATABASE
+VALUE
+\\
+C-1559689
+\\
+DT:26.09.21
+}
+&
+\makecell{
+US\$
+\\
+13.98/KG
+} \\
+\hline
+% row
+\makecell{
+02
+}
+&
+\makecell{
+COMPLETE BEARING
+\\
++CASING
+\\
+C/O. CHINA
+}
+&
+\makecell{
+51.00
+\\
+KGS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+1980.00
+\\
+38.82/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+38.82/KG
+} \\
+\hline
+% row
+\makecell{
+03
+}
+&
+\makecell{
+COMPLETE BEARING
+\\
++CASING
+\\
+C/O. CHINA
+}
+&
+\makecell{
+30.00
+\\
+KGS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+1475.00
+\\
+49.16/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+49.16/KG
+} \\
+\hline
+% row
+\makecell{
+04
+}
+&
+\makecell{
+COMPLETE BEARING
+\\
++CASING
+\\
+C/O. CHINA
+}
+&
+\makecell{
+32.00
+\\
+KGS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+2130.00
+\\
+66.56/KG
+}
+&
+\makecell{
+US\$
+\\
+30.30/KG
+\\
+C-1681001
+\\
+DT:18.10.21
+}
+&
+\makecell{
+US\$
+\\
+66.56/KG
+} \\
+\hline
+% row
+\makecell{
+05
+}
+&
+\makecell{
+WITHOUT MAGNET
+\\
+BEARING BALL
+\\
+C/O. CHINA
+}
+&
+\makecell{
+5.00
+\\
+KGS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8482.80.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+60.00
+\\
+12.00/KG
+}
+&
+\makecell{
+US\$
+\\
+5.00/KG
+\\
+C-1895718
+\\
+DT:25.11.21
+}
+&
+\makecell{
+US\$
+\\
+12.00/KG
+} \\
+\hline
+% row
+\makecell{
+06
+}
+&
+\makecell{
+MAGNET ROD
+\\
+C/O. CHINA
+}
+&
+\makecell{
+12.00
+\\
+KGS
+}
+&
+\makecell{
+8448.49.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8448.49.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+CPC 4000/220
+}
+&
+\makecell{
+US\$
+\\
+60.00
+\\
+12.00/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+12.00/KG
+} \\
+\hline
+% row
+\makecell{
+07
+}
+&
+\makecell{
+REPEAT GEAR
+\\
+C/O. CHINA
+}
+&
+\makecell{
+105.00
+\\
+KGS
+}
+&
+\makecell{
+8483.40.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8483.40.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+CPC 4000/220
+}
+&
+\makecell{
+US\$
+\\
+4804.80
+\\
+45.76/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+45.76/KG
+} \\
+\hline
+% row
+\makecell{
+08
+}
+&
+\makecell{
+CONVEYOR BELT
+\\
+L-29.24m, W-1.8m
+\\
+C/O. CHINA
+}
+&
+\makecell{
+89.00
+\\
+KGS
+}
+&
+\makecell{
+4010.12.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+4010.12.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+1190.34
+\\
+13.37/KG
+}
+&
+\makecell{
+US\$
+\\
+11.71/KG
+\\
+DATABASE
+VALUE
+\\
+C-1559689
+\\
+DT:26.09.21
+}
+&
+\makecell{
+US\$
+\\
+13.37/KG
+} \\
+\hline
+% row
+\makecell{
+09
+}
+&
+\makecell{
+MAGNETIC BEAM
+\\
+C/O. CHINA
+}
+&
+\makecell{
+35.00
+\\
+KGS
+}
+&
+\makecell{
+8448.39.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8448.39.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+CPC 4000/220
+}
+&
+\makecell{
+US\$
+\\
+1066.00
+\\
+30.46/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+30.46/KG
+} \\
+\hline
+% row
+\makecell{
+10
+}
+&
+\makecell{
+TANGENTIAL BELT
+\\
+(BLANKET)
+\\
+L-23.54m, W-2.16m, T-2.3m
+\\
+C/O. CHINA
+}
+&
+\makecell{
+205.00
+\\
+KGS
+}
+&
+\makecell{
+4010.39.90
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+4010.39.90
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+9948.96
+\\
+48.53/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+48.53/KG
+} \\
+\hline
+% row
+\makecell{
+11
+}
+&
+\makecell{
+SHEARING MACHINE
+\\
+BLADE
+\\
+C/O. CHINA
+}
+&
+\makecell{
+300.00
+\\
+KGS
+}
+&
+\makecell{
+8462.39.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8462.39.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+3180.00
+\\
+10.60/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+10.60/KG
+} \\
+\hline
+% row
+\makecell{
+12
+}
+&
+\makecell{
+HYDROLIC JACK
+\\
+WITH BOLT
+\\
+C/O. CHINA
+}
+&
+\makecell{
+100.00
+\\
+KGS
+}
+&
+\makecell{
+8425.42.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8425.42.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+CPC 4000/220
+}
+&
+\makecell{
+US\$
+\\
+1066.00
+\\
+12.60/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+12.60/KG
+} \\
+\hline
+% row
+\makecell{
+13
+}
+&
+\makecell{
+NUT \& BOLT
+\\
+WITH WASHER
+\\
+C/O. CHINA
+}
+&
+\makecell{
+12.00
+\\
+KGS
+}
+&
+\makecell{
+7318.19.00
+\\
+CD-25\%
+\\
+RD-3\%
+\\
+SD-20\%
+\\
+VAT-15\%
+\\
+AIT-5\%
+\\
+AT-5\%
+}
+&
+\makecell{
+7318.19.00
+\\
+CD-25\%
+\\
+RD-3\%
+\\
+SD-20\%
+\\
+VAT-15\%
+\\
+AIT-5\%
+\\
+AT-5\%
+}
+&
+\makecell{
+US\$
+\\
+190.00
+\\
+15.83/KG
+}
+&
+\makecell{
+US\$
+\\
+2.00/KG
+\\
+MINIMUM
+\\
+VALUE
+}
+&
+\makecell{
+US\$
+\\
+15.83/KG
+} \\
+\hline
+% row
+\makecell{
+14
+}
+&
+\makecell{
+FREQUENCY CONVERTOR
+\\
+C/O. CHINA
+}
+&
+\makecell{
+13.00
+\\
+KGS
+}
+&
+\makecell{
+8504.32.00
+\\
+CD-25\%
+\\
+RD-3\%
+\\
+SD-20\%
+\\
+VAT-15\%
+\\
+AIT-5\%
+\\
+AT-5\%
+}
+&
+\makecell{
+8504.32.00
+\\
+CD-25\%
+\\
+RD-3\%
+\\
+SD-20\%
+\\
+VAT-15\%
+\\
+AIT-5\%
+\\
+AT-5\%
+}
+&
+\makecell{
+US\$
+\\
+336.00
+\\
+25.84/KG
+}
+&
+\makecell{
+US\$
+\\
+4.50/KG
+\\
+MINIMUM
+VALUE
+}
+&
+\makecell{
+US\$
+\\
+25.84/KG
+} \\
+\hline
+% row
+\makecell{
+15
+}
+&
+\makecell{
+SELECTOR SWITCH
+\\
+C/O. CHINA
+}
+&
+\makecell{
+8.50
+\\
+KGS
+}
+&
+\makecell{
+8536.50.00
+\\
+CD-25\%
+\\
+RD-3\%
+\\
+SD-20\%
+\\
+VAT-15\%
+\\
+AIT-5\%
+\\
+AT-5\%
+}
+&
+\makecell{
+8536.50.00
+\\
+CD-25\%
+\\
+RD-3\%
+\\
+SD-20\%
+\\
+VAT-15\%
+\\
+AIT-5\%
+\\
+AT-5\%
+}
+&
+\makecell{
+US\$
+\\
+1271.00
+\\
+149.53/KG
+}
+&
+\makecell{
+US\$
+\\
+6.00/KG
+\\
+MINIMUM
+VALUE
+}
+&
+\makecell{
+US\$
+\\
+149.53/KG
+} \\
+\hline
+% row
+\makecell{
+16
+}
+&
+\makecell{
+WIND-UP BRACKET OF
+\\
+PNEUMATIC BRAKE
+\\
+C/O. CHINA
+}
+&
+\makecell{
+142.00
+\\
+KGS
+}
+&
+\makecell{
+8479.90.00
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+8479.90.00
+\\
+CD-1\%
+\\
++OTHERS
+\\
+CPC 4000/220
+}
+&
+\makecell{
+US\$
+\\
+70.00
+\\
+0.49/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+} \\
+\hline
+% row
+\makecell{
+17
+}
+&
+\makecell{
+TANGENTIAL BELT
+\\
+(BLANKET)
+\\
+L-76.49m, W-2.48m, T-2.5m
+\\
+C/O. CHINA
+}
+&
+\makecell{
+680.00
+\\
+KGS
+}
+&
+\makecell{
+4010.39.90
+\\
+CD-1\%
+\\
++OTHERS
+}
+&
+\makecell{
+4010.39.90
+\\
+CD-1\%
+\\
++OTHERS
+\\
+SRO-120/21
+\\
+CPC 4000/157
+}
+&
+\makecell{
+US\$
+\\
+1066.00
+\\
+54.68/KG
+}
+&
+\makecell{
+US\$
+\\
+2.80/KG
+}
+&
+\makecell{
+US\$
+\\
+54.68/KG
+} \\
+\hline
+\end{longtable}
+}
+\begin{document}
+\noindent
+\begin{minipage}[t]{0.05\linewidth}
+% ek
+০১।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+বি/ই রেজি: নং- {\beno}, তারিখ: {\bedt}
+নথিভূক্ত করে
+পরবর্তী কার্যক্রমের জন্য উপস্থাপন করা হলো।
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+সহকারী
+\end{minipage}
+\begin{minipage}[t]{0.40\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+\textbf{শুল্কায়ন কর্মকর্তা}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% dui
+০২।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+\underline{\textbf {আমদানিকৃত পণ্য চালানের
+মৌলিক তথ্য:}}
+\\
+\end{minipage}
+\footnotesize
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ক) বি/ই রেজি: নং ও তারিখ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+\textbf{{\beno}} \hspace{2em} DT: {\bedt}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(খ) আমদানিকারকের নাম, ঠিকানা
+ও BIN নম্বর
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+\textbf{{\impn}}
+\\
+{\impadd}
+\\
+BIN NO. {\impbin}
+\\
+OLD BIN NO. {\impoldbin}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(গ) সিএন্ডএফ এজেন্টের নাম, ঠিকানা
+ও AIN নম্বর
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+\textbf{{\cnfn}}
+\\
+{\cnfadd}
+\\
+AIN NO. {\cnfain}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ঘ) এল/সি নং ও তারিখ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\lcno} \hspace{2em} DT: {\lcdt}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ঙ) লিয়েন ব্যাংকের নাম
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\lienbank}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(চ) এলসিএ নং ও তারিখ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\lcano} \hspace{2em} DT: {\lcadt}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ছ) বি/এল নং ও তারিখ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\blno} \hspace{2em} DT: {\bldt}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(জ) বাণিজ্যিক ইনভয়েস নং ও তারিখ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\invno} \hspace{2em} DT: {\invdt}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ঝ) সিআরএফ নং ও ইস্যুর তারিখ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\crf} \hspace{2em} {\crfdt}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ঞ) পণ্যের বিবরণ
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\good}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ট) পণ্যের পরিমাণ (একক সহ)
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\pkg}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ঠ) পণ্যের এইচ.এস.কোড
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\hscode}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ড) পণ্যের মূল্য (ইনভয়েস অনুযায়ী)
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\price}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ঢ) কান্ট্রি অব অরিজিন
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\co}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ণ) কান্ট্রি অব শিপমেন্ট
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\coship}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(ত) জাহাজের নাম
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\vessel}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+\hspace*{1.8em}পালা নং বি/এল নং
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\menifest}, B/L {\blno}
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace*{1em}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+(থ) মেনিফিস্ট নং
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+:
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+{\menifest}
+\\
+\end{minipage}
+\normalsize
+\begin{minipage}[t]{0.05\linewidth}
+% tin
+০৩।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+\underline{\textbf{শুল্কায়ন সেকশনের পর্যালোচনা:}}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tina
+(ক)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{আমদানি দলিল পত্র যাচাই:}}
+পণ্যচালান খালাসের জন্য নিম্নবর্ণিত দলিলাদিসহ বি/ই দাখিল করা
+হয়েছে যা সংশ্লিষ্ট ব্যাংকের অথরাইজড কর্মকর্তা কর্তৃক সত্যায়িত।
+\\
+(১) এল.সি এবং এল.সি.এ ফরম।
+\\
+(২) ইনভয়েস।
+\\
+(৩) প্যাকিং লিস্ট।
+\\
+(৪) বি/এল।
+\\
+(৫) কান্ট্রি অব অরিজিন সনদ।
+\\
+দলিলাদি পর্যালোচনায় এগুলো
+সঠিক পাওয়া যায়।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tinb
+(খ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{আমদানি যোগ্যতা যাচাই:}}
+প্রচলিত আমদানিনীতি আদেশ ২০১৫-২০১৮ পর্যালোচনা করে দেখা যায় যে, পণ্যগুলি অবাধে আমদানিযোগ্য।
+আলোচ্য চালানের ক্ষেত্রে আমদানিনীতি আদেশের প্রযোজ্য অন্যান্য শর্ত (কান্ট্রি অব অরিজিন, রেজিঃ
+সার্টিফিকেট ইত্যাদি) প্রতিপালিত হয়েছে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tinc
+(গ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{কায়িক পরীক্ষার প্রতিবেদন পর্যালোচনা:}}
+আলোচ্য পণ্যচালানটির ১০০\% কায়িক পরীক্ষা করা হয়।
+কায়িক পরীক্ষায় ঘোষণা মোতাবেক সঠিক পাওয়া যায়।
+কায়িক পরীক্ষার প্রতিবেদন অনলাইনে দেখা যেতে পারে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tind
+(ঘ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{রাসায়নিক পরীক্ষা সংক্রান্ত মন্তব্য:}}
+আলোচ্য পণ্যচালানটির ক্ষেত্রে প্রযোজ্য নয়।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tine
+(ঙ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{এইচ.এস.কোড সঠিকতা যাচাই:}}
+The Customs Act, 1969 এর FIRST SCHEDULE ও
+EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আদেশ ইত্যাদির আলোকে পরীক্ষা করে পণ্যের সঠিক HS Code নোট অনুচ্ছেদ-৪
+এর ছকে উপস্থাপন করা হলো।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% ting
+(চ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{অভিযোগ সংক্রান্ত:}} আলোচ্য পণ্যচালানে
+গোপন সংবাদ দাতা, শুল্ক গোযেন্দা বা
+জাতীয় রাজস্ব বোর্ডের কিংবা অন্য দপ্তর থেকে
+কোন অভিযোগ পাওয়া যায় নাই।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tinh
+(ছ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{ন্যায় নির্ণয় সংক্রান্ত:}} প্রযোজ্য নয়।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% tinh
+(জ)
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+\underline{\textbf{উল্লেখ করার মত প্রাসঙ্গিক অন্যান্য বিষয়:}}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+(১)
+\end{minipage}
+\begin{minipage}[t]{0.85\linewidth}
+আলোচ্য পণ্যচালানটির ঘোষিত HS Code {\hscode}
+যা {\srooot}, {\sroootd} এর শর্ত মোতাবেক
+আমদানি করা হয়েছে। পণ্যের স্বাভাবিক শুল্কহার-১০\%।
+ইন্ডাস্ট্রির ক্ষেত্রে এসআরও অনুযায়ী উল্লিখিত
+১০\% শুল্ক হতে ১\% করা হয়েছে।
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+(২)
+\end{minipage}
+\begin{minipage}[t]{0.85\linewidth}
+আলোচ্য পণ্যচালানের বিপরীতে বাংলাদেশ
+টেক্সটাইল মিলস এসোসিয়েশন এর সভাপতি
+কর্তৃক স্বাক্ষরিত প্রত্যায়নপত্র
+দাখিল করেছেন। প্রত্যয়নপত্রে আমদানিকৃত
+যন্ত্রপাতি, যন্ত্রাংশ, ও উপকরণ
+উক্ত প্রতিষ্ঠানের উৎপাদন প্রক্রিয়ায়
+ব্যবহৃত হইবে এবং আমদানিকৃত
+যন্ত্রপাতি, যন্ত্রাংশ, ও উপকরণ
+{\srooot}, {\sroootd} অনুযায়ী
+রেয়াতীহারে শুল্কায়নের সুপারিশ
+করেন। বাংলাদেশ টেক্সটাইল মিলস
+এসোসিয়েশনের দাখিলকৃত প্রত্যয়নপত্র-২৮৫২২
+তারিখ: ১৮/১১/২০২১ ইং নথির যোগাযোগ অংশে রক্ষিত
+আছে, দয়া করে দেখা যেতে পারে।
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+(৩)
+\end{minipage}
+\begin{minipage}[t]{0.85\linewidth}
+এসআরও শর্ত মোতাবেক আমদানিকারক ৩০০.০০ (তিনশত)
+টাকার নন-জুডিশিয়াল স্ট্যাম্পে একখানা অঙ্গীকারনামা
+দাখিল করেছেন। দাখিলকৃত অঙ্গীকারনামায় আমদানিকৃত
+যন্ত্রপাতি, যন্ত্রাংশ, ও উপকরণ
+উক্ত প্রতিষ্ঠানের উৎপাদন প্রক্রিয়ায়
+ব্যবহার করবেন। অন্যথায় আমদানিকৃত উক্ত পণ্যের উপর
+প্রযোজ্য স্বাভাবিক হারের শুল্ককর পরিশোধ ছাড়াও
+শুল্ক আইন মোতাবেক শুল্ক কর্তৃপক্ষ
+গৃহীত যে কোন আইনানুগ সিদ্ধান্ত মানিয়া নিতে বাধ্য থাকিবেন
+মর্মে উল্লেখ করেছেন। আমদানিকারক কর্তৃক দাখিলকৃত
+অঙ্গীকারনামা নথির যোগাযোগ অংশে রক্ষিত আছে,
+দয়া করে দেখা যেতে পারে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% char
+০৪।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+\underline{\textbf{শুল্কায়ন সম্পর্কিত প্রস্তাব:}}
+পণ্য চালান সংক্রান্ত আমদানি দলিলপত্র
+ইনভয়েস পর্যালোচনা পূর্বক পণ্যের বর্ণনা, পরিমাণ, এইচ.এস.কোড, ঘোষিত মূল্য,
+সমসাময়িককালের অভিন্ন/অনুরূপ পণ্যের একক মূল্যসহ নিম্নের ছকে শুল্কায়নের প্রস্তাব উপস্থাপন
+করা হলো:
+\end{minipage}
+\scriptsize
+{\taxtab}
+\vspace*{1mm}
+\normalsize
+\noindent
+\begin{minipage}[t]{0.05\linewidth}
+% sat
+০৫।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+\underline{\textbf{শুল্কায়নযোগ্য মূল্য নিরুপন:}} ASYCUDA WORLD SYSTEM
+সমসাময়িককালের অভিন্ন / অনুরূপ মূল্য তথ্য পর্যালোচনা করে দেখা
+যায় যে, ইনভয়েস ঘোষিত মূল্যের চেয়ে ডাটাবেইস এর মূল্য উচ্চতর
+বিধায় শুল্ক মূল্যায়ন বিধিমালা-২০০০ এর বিধি ৫ এর আওতায় প্রস্তাবিত
+মূল্যে পণ্যচালানটি সাময়িক শুল্কায়ন করা যেতে পারে।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+% at
+০৬।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+\underline{\textbf{প্রস্তাব:}}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+(ক)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+{\srooot}, {\sroootd} মোতাবেক
+ডি এফ ভ্যাট বাবদ ৭,২০,৭৮৮.৮৪ (সাত লক্ষ বিশ হাজার সাতশত আটাশি টাকা চুরাশি পয়সা) টাকা নগদে
+আদায় পূর্বক পণ্যচালানটি ঘোষিত HS Code
+ও প্রস্তাবিত মূল্যে সাময়িক শুল্কায়ন করা যেতে
+পারে।
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+(খ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+কমিশনার, কাস্টমস মূল্যায়ন ও অভ্যন্তরীণ
+নিরীক্ষা কমিশনারেট যথাসম্ভব স্বল্পতম সময়ে
+নিরীক্ষা সমাপ্ত করিয়া নিরীক্ষা সমাপ্তির
+১(এক) মাসের মধ্যে পরিশিষ্ট-৩ মোতাবেক একটি
+বস্তুনিষ্ট প্রতিবেদন জাতীয় রাজস্ব বোর্ডের
+সদস্য (কাস্টমস নীতি) এর নিকট এর অনুলিপি সংশ্লিষ্ট
+কাস্টম হাউস বা কাস্টমস স্টেশন কর্তৃপক্ষ
+বরাবরে প্রেরণ করিবেন।
+নিরীক্ষায় রেয়াতী হারে আমদানিকৃত উপকরণের
+ধর্তব্যযোগ্য অবব্যবহার পাওয়া গেলে
+Customs Act এর Section-156
+এর Sub Section (1) এর Table এর Item 10A
+এর বিধান অনুযায়ী ব্যবস্থা গ্রহণ করিতে কাস্টমস
+মূল্যায়ন ও অভ্যন্তরীন নিরীক্ষা কমিশনারেট আমদানি
+সংশ্লিষ্ট কাস্টম কমিশনারকে অনুরোধ করিবেন।
+প্রতিবেদন প্রাপ্তির পর যদি দেখা যায় যে, আমদানিকৃত
+উপকরণ আমদানিকারকের প্রতিষ্ঠানে ব্যবহৃত হইয়াছে তাহা
+হইলে অঙ্গীকারনামা ফেরতযোগ্য হইবে।
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+(গ)
+\end{minipage}
+\begin{minipage}[t]{0.90\linewidth}
+{\srooot}, {\sroootd} এর শর্ত মোতাবেক
+শুল্ক মূল্যায়ন ও অভ্যন্তরীন নিরীক্ষা কমিশনারেট,
+গুলফেশাঁ প্লাজা (৬ষ্ট তলা), ৬৯, আউটার
+সার্কুলার রোড, মগবাজার, ঢাকা-১২১৭ এবং
+আমদানিকারক বরাবর পত্র প্রেরণ করা যেতে পারে।
+\\
+\\
+সদয় অবগতি ও আদেশার্থে উপস্থাপন করা
+হলো।
+\end{minipage}
+
+
+\end{document}
