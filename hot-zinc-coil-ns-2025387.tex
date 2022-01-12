@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[legalpaper,
             lmargin=1in,rmargin=0.5in,
-            bmargin=0.5in,tmargin=1in,includefoot]{geometry}
+            bmargin=0.5in,tmargin=1in]{geometry}
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{multirow}
@@ -28,43 +28,56 @@
 \underline{{পৃষ্ঠা - \thepage}}
 \\
 }
+\rhead{{\nfilenou}}
+% footer
+%\rfoot{চলমান পৃষ্ঠা-\thepage}
 
 \fancypagestyle{laststyle}
 {
    \fancyfoot[R]{}
 }
 
-\newcommand{\fileno}{নথি নং - ১২৩৪/এপি/সেকশন-৮(এ)/২০২১-২০২২}
-\newcommand{\product}{}
-\newcommand{\good}{ALUMINIUM PIPE, COPPER PIPE, ETC.}
-\newcommand{\pkg}{113 PKG=59,077.3 KG}
+\newcommand{\fileno}{নথি নং - ১০৬৯/এপি/সেকশন-৮(এ)/২০২১-২০২২}
+\newcommand{\nfilenou}{\underline{\fileno}}
+
+\newcommand{\product}{Refrigerator}
+\newcommand{\good}{HOT ZINC COIL, COLLED ROLLED ETC.}
+\newcommand{\pkg}{58 PKG=211849 KG}
+\newcommand{\hscode}{7210.61.10, 7209.15.00, 7208.26.90, 7210.49.10}
+\newcommand{\price}{US\$ 235,923.05}
+
 \newcommand{\co}{CHINA}
 \newcommand{\coship}{CHINA}
-\newcommand{\vessel}{MV. FILOTIMO}
-\newcommand{\blno}{SHWWSE211220204}
-\newcommand{\bldt}{14.12.2021}
-\newcommand{\beno}{C-2134487}
-\newcommand{\bedt}{30.12.2021}
-\newcommand{\lcno}{0000174121020332}
-\newcommand{\lcdt}{23.11.2021}
-\newcommand{\lcano}{27450}
+
+\newcommand{\vessel}{MARINE BIA}
+
+\newcommand{\blno}{SHWWSE211118755}
+\newcommand{\bldt}{17.11.21}
+
+\newcommand{\beno}{C-2025387}
+\newcommand{\bedt}{14.12.2021}
+\newcommand{\menifest}{2021/5792}
+
+\newcommand{\lcno}{0000088821020119}
+\newcommand{\lcdt}{28.10.21}
+\newcommand{\lcano}{363964}
 \newcommand{\lcadt}{\lcdt}
-\newcommand{\lienbank}{MERCANTILE BANK LTD.}
-\newcommand{\invno}{RFD20211022}
-\newcommand{\invdt}{01.12.2021}
+\newcommand{\lienbank}{ISLAMI BANK BANGLADESH LIMITED}
+
+\newcommand{\invno}{RFD20211014}
+\newcommand{\invdt}{12.12.2021}
 
 \newcommand{\impn}{\jeal}
 \newcommand{\impadd}{\jeala}
 \newcommand{\impbin}{\jealbin}
+\newcommand{\impoldbin}{}
 
 \newcommand{\crf}{NON CRF}
 \newcommand{\crfdt}{}
-\newcommand{\ircno}{}
-\newcommand{\ircrenewdt}{}
-\newcommand{\musokr}{}
-\newcommand{\hscode}{76081000, 74111010}
-\newcommand{\price}{US\$ 339,663.75}
-\newcommand{\menifest}{2021/6106}
+
+\newcommand{\ircno}{\jealirc}
+\newcommand{\ircrenewdt}{৩০/০৬/২০২২ ইং}
+\newcommand{\musokr}{নভেম্বর-২১}
 
 \newcommand{\taxtab}{
 \begin{longtable}{|c|c|c|c|c|c|c|c|}
@@ -86,7 +99,8 @@
 পরিমাণ
 }
 }
-& \textbf{
+&
+\textbf{
 \makecell{
 ইনভয়েস
 \\
@@ -94,7 +108,7 @@
 \\
 এইচএসকোড
 \\
-(শুল্কহারসহ)
+ও শুল্কহার
 }
 }
 &
@@ -104,7 +118,7 @@
 \\
 এইচএসকোড
 \\
-(শুল্কহারসহ)
+ও শুল্কহার
 }
 }
 &
@@ -151,61 +165,67 @@
 }
 &
 \makecell{
-ALUMINIUM PIPE
+HOT ZINC COIL
 \\
-1070 8*1MM
+($0.30^*1200\textrm{MM}$)
 \\
-{\co}
+C/O. {\co}
 }
 &
 \makecell{
-43,785.90
+17,410.00
 \\
 KGS
 }
 &
 \makecell{
-76081000
+7210.61.10
 \\
 CD-10\%
 \\
 AIT-0.83\%
 \\
+CPC 4000/409
+\\
 NBR LETTER
 \\
-CPC 4000/661
+SRO 114/21
 }
 &
 \makecell{
-76081000
+7210.61.10
 \\
 CD-10\%
 \\
 AIT-0.83\%
 \\
+CPC 4000/409
+\\
 NBR LETTER
 \\
-CPC 4000/661
+SRO 114/21
 }
 &
 \makecell{
 US\$
 \\
-3.70/KG
+1.12/KG
 }
 &
 \makecell{
 US\$
 \\
-LME PRICE
+1.11/KG
 \\
-2.64/KG
+C-1724230
+\\
+DT:26.10.21
 }
 &
 \makecell{
 US\$
 \\
-3.70/KG
+1.12/KG
 } \\
 \hline
 % row
@@ -214,67 +234,63 @@ US\$
 }
 &
 \makecell{
-COPPER PIPE
+COLD ROLLED SHEET
 \\
-6*0.65MM
+($3.0^*1250^*2500$)
 \\
-{\co}
+C/O. {\co}
 }
 &
 \makecell{
-5,541.60
+14,204.00
 \\
 KGS
 }
 &
 \makecell{
-74111010
+7209.15.00
 \\
-CD-5\%
-\\
-AIT-0.83\%
-\\
-SRO-114/21
-\\
-NBR LETTER
-\\
-CPC 4000/409
-}
-&
-\makecell{
-74111010
-\\
-CD-5\%
+CD-10\%
 \\
 AIT-0.83\%
 \\
-SRO-114/21
+CPC 4000/661
 \\
 NBR LETTER
+}
+&
+\makecell{
+7209.15.00
 \\
-CPC 4000/409
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/661
+\\
+NBR LETTER
 }
 &
 \makecell{
 US\$
 \\
-11.36/KG
+1.23/KG
 }
 &
 \makecell{
 US\$
 \\
-LME PRICE + 25\%
+1.25/KG
 \\
-9.850+25\%
+C-24340
 \\
-12.36/KG
+DT:19.09.21
 }
 &
 \makecell{
 US\$
 \\
-12.36/KG
+1.25/KG
 } \\
 \hline
 % row
@@ -283,67 +299,63 @@ US\$
 }
 &
 \makecell{
-COPPER PIPE
+PICKING PLATE
 \\
-6*0.65MM
+($4^*1250^*2500\textrm{MM}$)
 \\
-{\co}
+C/O. {\co}
 }
 &
 \makecell{
-4,558.20
+24,860.00
 \\
 KGS
 }
 &
 \makecell{
-74111010
+7208.26.90
 \\
-CD-5\%
-\\
-AIT-0.83\%
-\\
-SRO-114/21
-\\
-NBR LETTER
-\\
-CPC 4000/409
-}
-&
-\makecell{
-74111010
-\\
-CD-5\%
+CD-10\%
 \\
 AIT-0.83\%
 \\
-SRO-114/21
+CPC 4000/661
 \\
 NBR LETTER
+}
+&
+\makecell{
+7208.26.90
 \\
-CPC 4000/409
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/661
+\\
+NBR LETTER
 }
 &
 \makecell{
 US\$
 \\
-11.36/KG
+1.10/KG
 }
 &
 \makecell{
 US\$
 \\
-LME PRICE + 25\%
+0.40/KG
 \\
-9.850+25\%
+C-1648850
 \\
-12.36/KG
+DT:19.10.21
 }
 &
 \makecell{
 US\$
 \\
-12.36/KG
+1.10/KG
 } \\
 \hline
 % row
@@ -352,65 +364,274 @@ US\$
 }
 &
 \makecell{
-CAPILLARY COPPER PIPE
+HOT ZINC COIL
 \\
-{\co}
+($0.30^*1100\textrm{MM}$)
+\\
+C/O. {\co}
 }
 &
 \makecell{
-5,191.00
+69,870.00
 \\
 KGS
 }
 &
 \makecell{
-74111010
+7210.61.10
 \\
-CD-5\%
-\\
-AIT-0.83\%
-\\
-SRO-114/21
-\\
-NBR LETTER
-\\
-CPC 4000/409
-}
-&
-\makecell{
-74111010
-\\
-CD-5\%
+CD-10\%
 \\
 AIT-0.83\%
 \\
-SRO-114/21
+CPC 4000/409
 \\
 NBR LETTER
 \\
+SRO 114/21
+}
+&
+\makecell{
+7210.61.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
 CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
 }
 &
 \makecell{
 US\$
 \\
-12.12/KG
+1.14/KG
 }
 &
 \makecell{
 US\$
 \\
-LME PRICE + 25\%
+1.11/KG
 \\
-9.850+25\%
+C-1724230
 \\
-12.36/KG
+DT:26.10.21
 }
 &
 \makecell{
 US\$
 \\
-12.36/KG
+1.14/KG
+} \\
+\hline
+% row
+\makecell{
+05
+}
+&
+\makecell{
+HOT ZINC COIL
+\\
+($1.00^*1250\textrm{MM}$)
+\\
+C/O. {\co}
+}
+&
+\makecell{
+56,325.00
+\\
+KGS
+}
+&
+\makecell{
+7210.49.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
+}
+&
+\makecell{
+7210.49.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
+}
+&
+\makecell{
+US\$
+\\
+1.08/KG
+}
+&
+\makecell{
+US\$
+\\
+0.85/KG
+\\
+C-1656852
+\\
+DT:14.10.21
+}
+&
+\makecell{
+US\$
+\\
+1.08/KG
+} \\
+\hline
+% row
+\makecell{
+06
+}
+&
+\makecell{
+HOT ZINC COIL
+\\
+($1.2^*1250\textrm{MM}$)
+\\
+C/O. {\co}
+}
+&
+\makecell{
+22,150.00
+\\
+KGS
+}
+&
+\makecell{
+7210.49.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
+}
+&
+\makecell{
+7210.49.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
+}
+&
+\makecell{
+US\$
+\\
+1.08/KG
+}
+&
+\makecell{
+US\$
+\\
+0.85/KG
+\\
+C-1656852
+\\
+DT:14.10.21
+}
+&
+\makecell{
+US\$
+\\
+1.08/KG
+} \\
+\hline
+% row
+\makecell{
+07
+}
+&
+\makecell{
+HOT ZINC COIL
+\\
+($2.0^*1250\textrm{MM}^*25000 \textrm{MM}$)
+\\
+C/O. {\co}
+}
+&
+\makecell{
+7,030.00
+\\
+KGS
+}
+&
+\makecell{
+7210.49.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
+}
+&
+\makecell{
+7210.49.10
+\\
+CD-10\%
+\\
+AIT-0.83\%
+\\
+CPC 4000/409
+\\
+NBR LETTER
+\\
+SRO 114/21
+}
+&
+\makecell{
+US\$
+\\
+1.08/KG
+}
+&
+\makecell{
+US\$
+\\
+0.85/KG
+\\
+C-1656852
+\\
+DT:14.10.21
+}
+&
+\makecell{
+US\$
+\\
+1.08/KG
 } \\
 \hline
 \end{longtable}
@@ -426,7 +647,6 @@ US\$
 বি/ই রেজি: নং- {\beno}, তারিখ: {\bedt}
 নথিভূক্ত করে
 পরবর্তী কার্যক্রমের জন্য উপস্থাপন করা হলো।
-\\
 \\
 \\
 \end{minipage}
@@ -708,7 +928,7 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tina
+% tin
 (ক)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -734,7 +954,7 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinb
+% tin
 (খ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -748,21 +968,19 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinc
+% tin
 (গ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{কায়িক পরীক্ষার প্রতিবেদন পর্যালোচনা:}}
-আলোচ্য পণ্যচালানটির ১০০\% কায়িক পরীক্ষা করা হয়। কায়িক পরীক্ষায় ঘোষণা
-মোতাবেক সঠিক পণ্য পাওয়া যায়।
-কায়িক পরীক্ষার পরীক্ষার প্রতিবেদন অনলাইনে দেখা যেতে পারে।
+আলোচ্য পণ্যচালানটির ক্ষেত্রে প্রযোজ্য নয়।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tind
+% tin
 (ঘ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -774,7 +992,7 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tine
+% tin
 (ঙ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -784,54 +1002,61 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 প্রত্যায়িত এইচ.এস.কোড যথাযথ আছে।
 \\
 \end{minipage}
+\newpage
+\noindent
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinf
+% tin
 (চ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{রেয়াতী হার বা বিশেষ মওকুফ সংক্রান্ত মন্তব্য:}}
 \end{minipage}
+%\footnotesize
 \begin{minipage}[t]{0.1\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
+% tin
 (১)
 \end{minipage}
 \begin{minipage}[t]{0.85\linewidth}
-{\srooof}, {\srooofd}।
+{\nbrosnt}, {\nbrosnd}।
 \end{minipage}
 \begin{minipage}[t]{0.1\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
+% tin
 (২)
 \end{minipage}
 \begin{minipage}[t]{0.85\linewidth}
-{\nbrosn}, {\nbrosnd}।
+{\nbrfs}, {\nbrfsd}।
 \end{minipage}
 \begin{minipage}[t]{0.1\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
+% tin
 (৩)
 \end{minipage}
 \begin{minipage}[t]{0.85\linewidth}
-{\nbrfs}, {\nbrfsd}।
+{\srooof}, {\srooofd}।
 \\
 \end{minipage}
+\normalsize
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% ting
+% tin
 (ছ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{অভিযোগ সংক্রান্ত:}} আলোচ্য পণ্যচালানে
-গোপন সংবাদ দাতা, শুল্ক গোয়েন্দা বা
+গোপন সংবাদ দাতা, শুল্ক গোযেন্দা বা
 জাতীয় রাজস্ব বোর্ডের কিংবা অন্য দপ্তর থেকে
 কোন অভিযোগ পাওয়া যায় নাই।
 \\
@@ -840,7 +1065,7 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinh
+% tin
 (জ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -852,19 +1077,7 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 ৪।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
-\underline{\textbf{প্রাসঙ্গিক বিষয়:}} আলোচ্য পণ্যচালানটির
-আইটেম নং-
-০১
-নোট অনুচ্ছেদ ০৩(চ) এর (২) ও (৩) -এ উল্লেখিত
-জাতীয় রাজস্ব বোর্ডের পত্রের আলোকে
-{\cpcsso}
-এবং
-আইটেম নং-
-০২, ০৩ ও ০৪
-নোট অনুচ্ছেদ ০৩(চ) এর
-(২) ও (৩) -এ উল্লেখিত
-জাতীয় রাজস্ব বোর্ডের পত্র এবং
-{\srooof}, {\srooofd}
+\underline{\textbf{প্রাসঙ্গিক বিষয়:}} আলোচ্য পণ্যচালানটি {\srooof}, {\srooofd}
 এর শর্ত মোতাবেক আমদানি করা হয়েছে।
 উক্ত এসআরও মোতাবেক First Schedule
 ভূক্ত পণ্যসমূহের মধ্যে উল্লিখিত H.S Code
@@ -1073,23 +1286,24 @@ sub-section (1) এর টেবিল এর Item 10A এর বিধান
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% pach
+% char
 ০৫।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
 \underline{\textbf{এসআরও শর্ত পূরণের লক্ষ্যে
 দাখিলকৃত দলিলাদি:}}
 \end{minipage}
+%\footnotesize
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{0em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% chard
+% char
 (১)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 আলোচ্য আমদানিকারক হালনাগাদ Industrial IRC
-দাখিল করেছেন যার {\ircno} এবং
+দাখিল করেছেন, যার নং- {\ircno} এবং
 {\ircrenewdt} তারিখ পর্যন্ত নবায়নকৃত আছে।
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
@@ -1101,7 +1315,7 @@ sub-section (1) এর টেবিল এর Item 10A এর বিধান
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 আমদানিকারক প্রতিষ্ঠানটি শিল্প প্রতিষ্ঠান হিসেবে
-মূসক-২.৩ দাখিল করেছেন।
+মূসক-২.৩, মূসক-৪.৩ দাখিল করেছেন।
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{0em}
@@ -1111,25 +1325,10 @@ sub-section (1) এর টেবিল এর Item 10A এর বিধান
 (৩)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
-আমদানিকারক {\srooof}, {\srooofd} এর
-শর্ত-৩ অনুযায়ী বি/ই দাখিলের অব্যবহিত
+বি/ই দাখিলের অব্যবহিত
 পূর্ববর্তী মাসের {\musokr} পর্যন্ত দাখিলপত্র
 (রিটার্ন) দাখিল করেছেন, যা NBR এর ওয়েবসাইট
 যাচাইয়ে সঠিক পাওয়া যায়।
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-\hspace{0em}
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-% chard
-(৪)
-\end{minipage}
-\begin{minipage}[t]{0.90\linewidth}
-আমদানিকারক কর্তৃক দাখিলকৃত মূসক-৪.৩
-পর্যালোচনায় দেখা যায় যে, প্রতিষ্ঠানটির উৎপাদিত
-পণ্য {\product} এবং উপকরণের তালিকায়
-B/E এর ঘোষণা মোতাবেক {\good} পণ্যের নাম
-উল্লেখ রয়েছে।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
@@ -1146,11 +1345,11 @@ B/E এর ঘোষণা মোতাবেক {\good} পণ্যের ন�
 \scriptsize
 \begin{minipage}{1\textwidth}
 {\taxtab}
-\vspace{2mm}
+\vspace{5mm}
 \end{minipage}
 \normalsize
 \begin{minipage}[t]{0.05\linewidth}
-% sat
+% choi
 ০৭।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
@@ -1160,35 +1359,41 @@ B/E এর ঘোষণা মোতাবেক {\good} পণ্যের ন�
 পণ্যের শুল্কায়িত সর্বনিম্ন যে বিনিময় মূল্য পাওয়া যায়, উক্ত মূল্য অপেক্ষা ঘোষিত মূল্য বেশি হওয়ায়
 শুল্ক মূল্যায়ন (আমদানি পণ্যের মূল্য নির্ধারণ) বিধিমালা,
 ২০০০ (এসআরও নং- ৫৭/আইন/২০০০/১৮২১/শুল্ক, তারিখ: ২৩/০২/২০০০)
-এর বিধি-৪ ও ৫ অনুযায়ী আলোচ্য পণ্যচালানটি ঘোষিত
+এর বিধি- ৪ অনুযায়ী আলোচ্য পণ্যচালানটি ঘোষিত
 মূল্যে শুল্কায়নযোগ্য।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% at
+% sat
 ০৮।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
-আলোচ্য পণ্যচালানটির
-বি/ই ১ নং আইটেম
--ALUMINIUM PIPE
-নোট অনুচ্ছেদ ০৩(চ) এর (২) ও (৩) -এ উল্লেখিত
-জাতীয় রাজস্ব বোর্ডের পত্রের আলোকে
-{\cpcsso} -তে
-এবং
-বি/ই ২, ৩ ও ৪ নং আইটেম
-COPPER PIPE, CAPILLARY COPPER PIPE
-এর ক্ষেত্রে
-নোট অনুচ্ছেদ ০৩(চ) এর
-(২) ও (৩) -এ উল্লেখিত
-জাতীয় রাজস্ব বোর্ডের পত্র এবং
+% \underline{\textbf{সার্বিক পর্যালোচনা পূর্বক নিম্নোক্ত প্রস্তাব উপস্থাপন করা হলো:}}
+% \end{minipage}
+% \begin{minipage}[t]{0.05\linewidth}
+% \hspace{0em}
+% \end{minipage}
+% % \footnotesize
+% \begin{minipage}[t]{0.95\linewidth}
+% প্রস্তাব:
+% \end{minipage}
+% \begin{minipage}[t]{0.05\linewidth}
+% \hspace{0em}
+% \end{minipage}
+% \begin{minipage}[t]{0.05\linewidth}
+% (ক)
+% \end{minipage}
+% \begin{minipage}[t]{0.90\linewidth}
+আমদানিকারক প্রতিষ্ঠান কর্তৃক আলোচ্য চালানের
+ক্ষেত্রে জাতীয় রাজস্ব বোর্ডের পত্র এবং
 {\srooof}, {\srooofd}
 এর শর্তাবলী (প্রযোজ্য ক্ষেত্রে) পরিপালিত হয়েছে
-বিধায়
-{\cpcfzn} -তে নোট অনুচ্ছেদ-৬ এর প্রকৃত H.S Code
+বিধায় পণ্যচালানটির আইটেম নং ০১, ০৪, ০৫, ০৬, ০৭
+{\cpcfzn} এবং আইটেম নং ০২ ও ০৩ {\cpcsso}-তে নোট অনুচ্ছেদ-৬ এর প্রকৃত H.S Code
 ও প্রস্তাবিত মূল্যে শুল্কায়ন অনুমোদন দেয়া যেতে পারে।
 \\
 \\
 সদয় অবগতি ও আদেশার্থে।
 \end{minipage}
+\thispagestyle{laststyle}
 \end{document}
