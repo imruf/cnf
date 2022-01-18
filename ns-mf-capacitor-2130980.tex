@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[legalpaper,
             lmargin=1in,rmargin=0.5in,
-            bmargin=0.5in,tmargin=1in,includefoot]{geometry}
+            bmargin=0.5in,tmargin=1in]{geometry}
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{multirow}
@@ -28,44 +28,55 @@
 \underline{{পৃষ্ঠা - \thepage}}
 \\
 }
+\rhead{{\nfilenou}}
+% footer
+%\rfoot{চলমান পৃষ্ঠা-\thepage}
 
 \fancypagestyle{laststyle}
 {
    \fancyfoot[R]{}
 }
 
-\newcommand{\fileno}{নথি নং - ৩৩১১/এপি/সেকশন-৫(এ)/২০২১-২০২২}
-\newcommand{\product}{}
-\newcommand{\good}{KRAFT SILICON PAPER}
-\newcommand{\pkg}{11 PKG=2,763.00 KG}
-\newcommand{\co}{CHINA}
-\newcommand{\coship}{CHINA}
-\newcommand{\vessel}{MV. MAERSK XIAMEN}
-\newcommand{\rotno}{2021/6136}
-\newcommand{\blno}{1ZSSHA21120956}
-\newcommand{\bldt}{}
-\newcommand{\beno}{C-25420}
-\newcommand{\bedt}{04.01.2022}
-\newcommand{\lcno}{0000174121020359}
-\newcommand{\lcdt}{}
-\newcommand{\lcano}{}
-\newcommand{\lcadt}{}
-\newcommand{\lienbank}{MERCANTILE BANK LTD.}
-\newcommand{\invno}{BST20212212201}
-\newcommand{\invdt}{221221}
+\newcommand{\fileno}{নথি নং - ১০৪১/এপি/সেকশন-৯(সি)/২০২১-২০২২}
+\newcommand{\nfilenou}{\underline{\fileno}}
 
-\newcommand{\impn}{\jeal}
-\newcommand{\impadd}{\jeala}
-\newcommand{\impbin}{\jealbin}
+\newcommand{\product}{FAN AND CABLES}
+\newcommand{\good}{MF CAPACITOR.}
+\newcommand{\pkg}{9 PKG=3,940.00 KG}
+\newcommand{\hscode}{85322210}
+\newcommand{\price}{US\$ 21,470.00}
+
+\newcommand{\co}{Korea}
+\newcommand{\coship}{Korea}
+
+\newcommand{\vessel}{INGENUITY}
+
+\newcommand{\blno}{SNKO010211115455}
+\newcommand{\bldt}{06.12.2021}
+
+\newcommand{\beno}{C-2130980}
+\newcommand{\bedt}{30.12.2021}
+\newcommand{\menifest}{2021/6023}
+
+\newcommand{\lcno}{0000088821020105}
+\newcommand{\lcdt}{10.10.21}
+\newcommand{\lcano}{363972}
+\newcommand{\lcadt}{\lcdt}
+\newcommand{\lienbank}{ISLAMI BANK BANGLADESH LIMITED}
+
+\newcommand{\invno}{PIA-211130}
+\newcommand{\invdt}{30.11.2021}
+
+\newcommand{\impn}{\jfcl}
+\newcommand{\impadd}{\jfcla}
+\newcommand{\impbin}{\jfclbin}
 
 \newcommand{\crf}{NON CRF}
 \newcommand{\crfdt}{}
-\newcommand{\ircno}{}
-\newcommand{\ircrenewdt}{}
-\newcommand{\musokr}{}
-\newcommand{\hscode}{84189910}
-\newcommand{\price}{US\$ 21,522.30}
-\newcommand{\menifest}{2021/6136}
+
+\newcommand{\ircno}{২৬০৩২৬১২০৫১৫০২০}
+\newcommand{\ircrenewdt}{৩০/০৬/২০২২ ইং}
+\newcommand{\musokr}{নভেম্বর-২১}
 
 \newcommand{\taxtab}{
 \begin{longtable}{|c|c|c|c|c|c|c|c|}
@@ -87,7 +98,8 @@
 পরিমাণ
 }
 }
-& \textbf{
+&
+\textbf{
 \makecell{
 ইনভয়েস
 \\
@@ -95,7 +107,7 @@
 \\
 এইচএসকোড
 \\
-(শুল্কহারসহ)
+ও শুল্কহার
 }
 }
 &
@@ -105,7 +117,7 @@
 \\
 এইচএসকোড
 \\
-(শুল্কহারসহ)
+ও শুল্কহার
 }
 }
 &
@@ -152,60 +164,72 @@
 }
 &
 \makecell{
-{\good}
+MF CAPACITOR
 \\
-{\co}
+C/O. {\co}
 }
 &
 \makecell{
-2,763.00
+3,940.00
 \\
 KGS
 }
 &
 \makecell{
-84189910
+85322210
 \\
-CD-25\%
+CD-10\%
 \\
-AIT-0.83\%
+VAT-15\%
 \\
-CPC 4000/409
+AIT-5\%
+\\
+AT-3\%
+\\
+CPC 4000/401
+\\
+SRO 114/21
 }
 &
 \makecell{
-84189910
+85322210
 \\
-CD-25\%
+CD-10\%
 \\
-AIT-0.83\%
+VAT-15\%
 \\
-CPC 4000/409
+AIT-5\%
+\\
+AT-3\%
+\\
+CPC 4000/401
+\\
+SRO 114/21
 }
 &
 \makecell{
 US\$
 \\
-2.10/KG
+5.45/KG
 }
 &
 \makecell{
 US\$
 \\
-\hspace{4em}
+4.00/KG
 \\
 DATA BASE
 VALUE
 \\
-C-\hspace{4em}
+C-\hspace{5em}
 \\
-DT:\hspace{4em}
+DT:\hspace{5em}
 }
 &
 \makecell{
 US\$
 \\
-2.10/KG
+5.45/KG
 } \\
 \hline
 \end{longtable}
@@ -221,7 +245,6 @@ US\$
 বি/ই রেজি: নং- {\beno}, তারিখ: {\bedt}
 নথিভূক্ত করে
 পরবর্তী কার্যক্রমের জন্য উপস্থাপন করা হলো।
-\\
 \\
 \\
 \end{minipage}
@@ -503,7 +526,7 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tina
+% tin
 (ক)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -529,7 +552,7 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinb
+% tin
 (খ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -543,19 +566,19 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinc
+% tin
 (গ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{কায়িক পরীক্ষার প্রতিবেদন পর্যালোচনা:}}
-আলোচ্য পণ্যচালানটির ১০০\% কায়িক পরীক্ষা করা হয়।
+আলোচ্য পণ্যচালানটির ক্ষেত্রে প্রযোজ্য নয়।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tind
+% tin
 (ঘ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -567,7 +590,7 @@ AIN NO. {\cnfain}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tine
+% tin
 (ঙ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -577,45 +600,61 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 প্রত্যায়িত এইচ.এস.কোড যথাযথ আছে।
 \\
 \end{minipage}
+\newpage
+\noindent
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinf
+% tin
 (চ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{রেয়াতী হার বা বিশেষ মওকুফ সংক্রান্ত মন্তব্য:}}
 \end{minipage}
+%\footnotesize
+% \begin{minipage}[t]{0.1\linewidth}
+% \hspace{1em}
+% \end{minipage}
+% \begin{minipage}[t]{0.05\linewidth}
+% % tin
+% (১)
+% \end{minipage}
+% \begin{minipage}[t]{0.85\linewidth}
+% {\nbrosnt}, {\nbrosnd}।
+% \end{minipage}
+% \begin{minipage}[t]{0.1\linewidth}
+% \hspace{1em}
+% \end{minipage}
+% \begin{minipage}[t]{0.05\linewidth}
+% % tin
+% (২)
+% \end{minipage}
+% \begin{minipage}[t]{0.85\linewidth}
+% {\nbrfs}, {\nbrfsd}।
+% \end{minipage}
 \begin{minipage}[t]{0.1\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
+% tin
 (১)
 \end{minipage}
 \begin{minipage}[t]{0.85\linewidth}
 {\srooof}, {\srooofd}।
-\end{minipage}
-\begin{minipage}[t]{0.1\linewidth}
-\hspace{1em}
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-(২)
-\end{minipage}
-\begin{minipage}[t]{0.85\linewidth}
-{\nbrosn}, {\nbrosnd}।
 \\
 \end{minipage}
+\normalsize
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% ting
+% tin
 (ছ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{অভিযোগ সংক্রান্ত:}} আলোচ্য পণ্যচালানে
-গোপন সংবাদ দাতা, শুল্ক গোযেন্দা বা
+গোপন সংবাদ দাতা, শুল্ক গোয়েন্দা বা
 জাতীয় রাজস্ব বোর্ডের কিংবা অন্য দপ্তর থেকে
 কোন অভিযোগ পাওয়া যায় নাই।
 \\
@@ -624,7 +663,7 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 \hspace{1em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% tinh
+% tin
 (জ)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
@@ -632,23 +671,24 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% pach
+% char
 ০৪।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
 \underline{\textbf{এসআরও শর্ত পূরণের লক্ষ্যে
 দাখিলকৃত দলিলাদি:}}
 \end{minipage}
+%\footnotesize
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{0em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% chard
+% char
 (১)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
-আলোচ্য আমদানিকারক হালনাগাদ Industrial IRC
-দাখিল করেছেন যার {\ircno} এবং
+আলোচ্য আমদানিকারক Industrial IRC
+দাখিল করেছেন, যার নং- {\ircno} এবং
 {\ircrenewdt} তারিখ পর্যন্ত নবায়নকৃত আছে।
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
@@ -660,7 +700,7 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 আমদানিকারক প্রতিষ্ঠানটি শিল্প প্রতিষ্ঠান হিসেবে
-মূসক-২.৩ দাখিল করেছেন।
+মূসক-২.৩, মূসক-৪.৩ দাখিল করেছেন।
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
 \hspace{0em}
@@ -670,25 +710,10 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 (৩)
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
-আমদানিকারক {\srooof}, {\srooofd} এর
-শর্ত-৩ অনুযায়ী বি/ই দাখিলের অব্যবহিত
+বি/ই দাখিলের অব্যবহিত
 পূর্ববর্তী মাসের {\musokr} পর্যন্ত দাখিলপত্র
 (রিটার্ন) দাখিল করেছেন, যা NBR এর ওয়েবসাইট
 যাচাইয়ে সঠিক পাওয়া যায়।
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-\hspace{0em}
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-% chard
-(৪)
-\end{minipage}
-\begin{minipage}[t]{0.90\linewidth}
-আমদানিকারক কর্তৃক দাখিলকৃত মূসক-৪.৩
-পর্যালোচনায় দেখা যায় যে, প্রতিষ্ঠানটির উৎপাদিত
-পণ্য {\product} এবং উপকরণের তালিকায়
-B/E এর ঘোষণা মোতাবেক {\good} পণ্যের নাম
-উল্লেখ রয়েছে।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
@@ -705,11 +730,11 @@ B/E এর ঘোষণা মোতাবেক {\good} পণ্যের ন�
 \scriptsize
 \begin{minipage}{1\textwidth}
 {\taxtab}
-\vspace{2mm}
+\vspace{5mm}
 \end{minipage}
 \normalsize
 \begin{minipage}[t]{0.05\linewidth}
-% sat
+% choi
 ০৬।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
@@ -719,53 +744,25 @@ B/E এর ঘোষণা মোতাবেক {\good} পণ্যের ন�
 পণ্যের শুল্কায়িত সর্বনিম্ন যে বিনিময় মূল্য পাওয়া যায়, উক্ত মূল্য অপেক্ষা ঘোষিত মূল্য বেশি হওয়ায়
 শুল্ক মূল্যায়ন (আমদানি পণ্যের মূল্য নির্ধারণ) বিধিমালা,
 ২০০০ (এসআরও নং- ৫৭/আইন/২০০০/১৮২১/শুল্ক, তারিখ: ২৩/০২/২০০০)
-এর বিধি-৪ অনুযায়ী আলোচ্য পণ্যচালানটি ঘোষিত
+এর বিধি- ৪ অনুযায়ী আলোচ্য পণ্যচালানটি ঘোষিত
 মূল্যে শুল্কায়নযোগ্য।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-% at
+% sat
 ০৭।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
-\underline{\textbf{সার্বিক পর্যালোচনা পূর্বক নিম্নোক্ত প্রস্তাব উপস্থাপন করা হলো:}}
-\\
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-\hspace{0em}
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-(ক)
-\end{minipage}
-\begin{minipage}[t]{0.90\linewidth}
-{\srooof}, {\srooofd}
-এর অনুচ্ছেদ-৭ মোতাবেক রেয়াতী হারে
-আমদানিকৃত কাঁচামাল ব্যবহারপূর্বক
-উৎপাদিত পণ্য মূসক আইন ও বিধিমালা
-অনুযায়ী সরবরাহপূর্বক যথাযথ পরিমান মূসক
-ও সম্পূরক শুল্ক প্রদান করা হয়েছে কিনা তা এ
-দপ্তরকে অবহিত করার জন্য সংশ্লিষ্ট ভ্যাট বিভাগ
-বরাবর পত্র প্রদান করা যেতে পারে।
-পত্রের খসড়া প্রস্তুতপূর্বক অনুমোদন/স্বাক্ষরের জন্য
-নথির পত্রাংশে সংযুক্ত করা হলো।
-\\
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-\hspace{0em}
-\end{minipage}
-\begin{minipage}[t]{0.05\linewidth}
-(খ)
-\end{minipage}
-\begin{minipage}[t]{0.90\linewidth}
 আমদানিকারক প্রতিষ্ঠান কর্তৃক আলোচ্য চালানের
 ক্ষেত্রে
 {\srooof}, {\srooofd}
 এর শর্তাবলী (প্রযোজ্য ক্ষেত্রে) পরিপালিত হয়েছে
 বিধায় পণ্যচালানটি {\srooof}, {\srooofd}
-{\cpcfzn} নোট অনুচ্ছেদ-৬ এর প্রকৃত H.S Code
-ও প্রস্তাবিত মূল্যে শুল্কায়ন অনুমোদন দেয়া যেতে পারে।
+{\cpcfzo} -তে নোট অনুচ্ছেদ-৫ এর প্রকৃত H.S Code
+ও প্রস্তাবিত মূল্যে সাময়িক শুল্কায়ন অনুমোদন দেয়া যেতে পারে।
 \\
 \\
 সদয় অবগতি ও আদেশার্থে।
 \end{minipage}
+\thispagestyle{laststyle}
 \end{document}
