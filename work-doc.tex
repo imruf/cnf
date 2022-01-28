@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,
+            lmargin=0.5in,rmargin=0.5in,
+            bmargin=0.5in,tmargin=0.8in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{libertine}
+\usepackage{lscape}
+
+\begin{document}
+\begin{landscape}
+
+\begin{longtable}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{
+\textbf{
+\makecell{
+SL \\
+\#
+}
+}
+}
+&
+\multicolumn{3}{|c|}{
+\textbf{
+\makecell{
+DESCRIPTION
+}
+}
+}
+&
+\multicolumn{3}{|c|}{
+\textbf{
+\makecell{
+ASSESSMENT COMMENT
+}
+}
+}
+\\
+\cline{2-7}
+% row
+&
+\textbf{
+ITEM NAME
+}
+&
+\textbf{
+B/E NO
+}
+&
+\textbf{
+STC
+}
+&
+\textbf{
+ARO Comment
+}
+&
+\textbf{
+RO Comment
+}
+&
+\textbf{
+AC/DC/ADC/JC/C
+}
+\\
+\hline
+% row
+% sl
+1
+&
+\makecell{
+% item no
+Conveyor Belt
+}
+&
+\makecell{
+% beno
+}
+&
+\makecell{
+% stc
+}
+&
+\makecell{
+% aro
+1. Blanket
+\\
+2. Tangential Belt
+}
+&
+\makecell{
+% ro
+}
+&
+\makecell{
+% ac/dc
+}
+\\
+\hline
+% row
+% sl
+2
+&
+\makecell{
+% item no
+Hot Zinc Coil
+}
+&
+\makecell{
+% beno
+}
+&
+\makecell{
+% stc
+}
+&
+\makecell{
+% aro
+1. Mill Test Report
+\\
+2. Hot Zinc
+}
+&
+\makecell{
+% ro
+1. Check Item HS Code
+}
+&
+\makecell{
+% ac/dc
+}
+\\
+\hline
+\end{longtable}
+
+\end{landscape}
+\end{document}
