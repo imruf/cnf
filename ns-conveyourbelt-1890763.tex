@@ -18,6 +18,12 @@
             % feature=1,
             % changecounternumbering=0
            ]{latexbangla}
+\include{cnfcommand}
+
+
+\let\oldhref\href
+\renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -37,7 +43,6 @@
 }
 
 \newcommand{\fileno}{নথি নং - ২১৬৯/এপি/সেকশন-৭(বি)/২০২১-২০২২}
-\newcommand{\filenou}{\underline{\fileno}}
 \newcommand{\beno}{C-1890763}
 \newcommand{\bedt}{24.11.2021}
 \newcommand{\lcno}{0000174121020247}
@@ -59,59 +64,22 @@
 \newcommand{\co}{CHINA}
 \newcommand{\coship}{HONG KONG}
 \newcommand{\vessel}{MV. MCC TAIPEI}
-\newcommand{\ssml}{SHAMEEM SPINNING MILLS LTD.}
-\newcommand{\ssmla}{SHAFIPUR, KALIAKAIR
-\\
-GAZIPUR-1751, BANGLADESH.}
-\newcommand{\jsml}{JAMUNA SPINNING MILLS LTD.}
-\newcommand{\jsmla}{SHAFIPUR, KALIAKAIR
-\\
-GAZIPUR-1751, BANGLADESH.}
-\newcommand{\jdl}{JAMUNA DENIMS LTD.}
-\newcommand{\jdla}{SHAFIPUR, KALIAKAIR
-\\
-GAZIPUR-1751, BANGLADESH.}
-\newcommand{\scml}{SHAMEEM COMPOSITE MILLS LTD.}
-\newcommand{\jeal}{JAMUNA ELECTRONICS \& AUTOMOBILES LTD.}
-\newcommand{\jdwl}{JAMUNA DENIMS \& WEAVING LTD.}
-\newcommand{\htf}{HOORAIN HTF LTD.}
-\newcommand{\htfa}{BEJURA, SOUTH BEJURA, MADHABPUR,
-\\
-HOBIGONJ-3331, BANGLADESH
-}
-\newcommand{\tdj}{M/S THE DAILY JUGANTOR}
-\newcommand{\tdja}{Ka-244, Kuril, Progati Sarani, Vatara PS
-\\
-Dhaka-1229,Bangladesh}
 
 \newcommand{\impn}{\htf}
 \newcommand{\impadd}{\htfa}
-\newcommand{\impbin}{000146478-0103}
-\newcommand{\impoldbin}{000146478}
-\newcommand{\cnfn}{SHAMEEM SPINNING MILLS LTD.}
-\newcommand{\cnfadd}{92, HIGH LEVEL ROAD
-\newline
-LALKHAN BAZAR, CHITTAGONG}
-\newcommand{\cnfain}{301 08 3417}
+\newcommand{\impbin}{\htfbin}
 \newcommand{\ircno}{আইআরসি নং - ২৬০৩২৬১২০৪২৬৭২০}
 \newcommand{\ircrenewdt}{৩০/০৬/২০২২ ইং}
 \newcommand{\musokr}{সেপ্টেম্বর-২১}
 \newcommand{\menifest}{2021/5230}
-\newcommand{\srofs}{এসআরও নং - ৫৭-আইন/২০০০/১৮২১/শুল্ক}
-\newcommand{\srofsd}{তারিখ: ২৩/০২/২০০০ খ্রি:}
-\newcommand{\sroooth}{এসআরও নং -১১৩-আইন/০২/কাস্টমস}
-\newcommand{\srooothd}{তারিখ: ২৪/০৫/২০২১ খ্রি:}
-\newcommand{\srooof}{এসআরও নং -১১৪-আইন/২০২১/০৩/কাস্টমস}
-\newcommand{\srooofd}{তারিখ: ২৪/০৫/২০২১ খ্রি:}
-\newcommand{\srooot}{এসআরও নং -১২০-আইন/২০২১/০৯/কাস্টমস}
-\newcommand{\sroootd}{তারিখ: ২৪/০৫/২০২১ খ্রিঃ}
-\newcommand{\srotsz}{এসআরও নং - ৩৬০-আইন/২০১৩/২৪৬৮/কাস্টমস}
-\newcommand{\srotszd}{তারিখ: ২৫/১১/২০১৩ খ্রি:}
-\newcommand{\nbrosnt}{জাতীয় রাজস্ব বোর্ডের পত্র নং - ০৮.০১.০০০০.০৬৮.১৮.০০৪.১৭/১৬৯(৩)}
-\newcommand{\nbrosntd}{তারিখ: ২৭/০৬/২০২১ খ্রি:}
-\newcommand{\nbrfs}{জাতীয় রাজস্ব বোর্ডের পত্র নং - ০৮.০১.০০০০.০৩৪.০২.৩০১.১৯-৪৭}
-\newcommand{\nbrfsd}{তারিখ: ১২/০৭/২০২১ খ্রি:}
-\newcommand{\cpc}{(সিপিসি ৪০০০/৪০৯)}
+
+\newcommand{\btmaltno}{প্রত্যয়ন পত্র নং- ২৮৫২২}
+\newcommand{\btmaltnodt}{তারিখ:  ১৮/০৯/২০২১ খ্রি:}
+
+
+\newcommand{\rodt}{তারিখ: \hspace{2.0em}/০২/২০২২ ইং}
+\newcommand{\fdt}{\hspace*{3em} তারিখ: \hspace{2.2em} /০২/২০২২}
+
 \newcommand{\taxtab}{
 \begin{longtable}{|c|c|c|c|c|c|c|c|}
 \hline
@@ -1313,8 +1281,6 @@ US\$
 \\
 BIN NO. {\impbin}
 \\
-OLD BIN NO. {\impoldbin}
-\\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
 \hspace*{1em}
@@ -1809,6 +1775,168 @@ Customs Act এর Section-156
 সদয় অবগতি ও আদেশার্থে উপস্থাপন করা
 হলো।
 \end{minipage}
+
+\newpage
+\begin{center}
+\vspace*{6MM}
+গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+\\
+\footnotesize{কাস্টম হাউস, চট্টগ্রাম।}
+\\
+\href{}{web: www.chc.gov.bd}\hspace{1em}
+\href{}{email: customhousectg@gmail.com}
+\end{center}
+\begin{minipage}[t]{.70\linewidth}
+{\fileno}
+\end{minipage}
+\begin{minipage}[t]{.30\linewidth}
+{\fdt}
+\\
+\end{minipage}
+\begin{minipage}[t]{.07\linewidth}
+প্রাপক:
+\end{minipage}
+\begin{minipage}[t]{.93\linewidth}
+কমিশনার
+\\
+শুল্ক মূল্যায়ন ও অভ্যন্তরীণ নিরীক্ষা কমিশনারেট
+\\
+গুলফেঁশা প্লাজা (৬ষ্ঠ তলা)
+\\
+৬৯, আউটার সার্কুলার রোড
+\\
+মগবাজার, ঢাকা-১২১৭।
+\\
+\end{minipage}
+\begin{minipage}[t]{.07\linewidth}
+বিষয়:
+\end{minipage}
+\begin{minipage}[t]{.93\linewidth}
+\textbf{আমদানিকৃত পণ্য {\good} এর যথাযথ ব্যবহার নিশ্চিতকরণ।}
+\end{minipage}
+\begin{minipage}[t]{.07\linewidth}
+সূত্র:
+\end{minipage}
+\begin{minipage}[t]{.93\linewidth}
+{\srootz}, {\srootzd}।
+\\
+উপর্যুক্ত বিষয় ও সূত্রের প্রতি আপনার সদয় দৃষ্টি
+আকর্ষন করা হলো।
+\\
+\end{minipage}
+\begin{minipage}[t]{.07\linewidth}
+২।
+\end{minipage}
+\begin{minipage}[t]{.93\linewidth}
+আমদানিকারক প্রতিষ্ঠান- {\impn}, {\impadd}
+কর্তৃক এলসি নং- {\lcno}, Date: {\lcdt}
+এর মাধ্যমে {\co} হতে
+{\pkg} সূত্রোক্ত জাহাজ যোগে {\good}
+পণ্যচালানটি আমদানি করে পণ্য
+খালাসের নিমিত্তে বি/ই নং- {\beno}, Date: {\bedt}
+দাখিল করেন। আমদানিকারক একটি
+শিল্প প্রতিষ্ঠান বিধায় পণ্যচালানটি
+{\srootz}, {\srootzd}
+এর শর্ত মোতাবেক আমদানি করেছেন এবং
+তার প্রতিষ্ঠানটি বাংলাদেশ টেক্সটাইল মিলস
+এসোসিয়েশন এর একটি সদস্য মর্মে
+{\btmaltno},
+{\btmaltnodt}
+দাখিল করেছেন।
+\\
+\end{minipage}
+\begin{minipage}[t]{.07\linewidth}
+৩।
+\end{minipage}
+\begin{minipage}[t]{.93\linewidth}
+উক্ত এসআরও এর শর্ত মোতাবেক
+আলোচ্য আমদানিকারকের আমদানিকৃত পণ্য
+শিল্প কারখানায় যথাযথভাবে ব্যবহার করা হয়েছে
+কিনা তা আপনার দপ্তর কর্তৃক
+যথাযথ স্বল্প সময়ে
+নিরীক্ষা সমাপ্তির ৬(ছয়) মাসের মধ্যে এসআরও
+এর পরিশিষ্ট-৩ মোতাবেক একটি বস্তুনিষ্ট
+প্রতিবেদন জাতীয় রাজস্ব বোর্ডের সদস্য
+(কাস্টমস নীতি) এর নিকট এবং অনুলিপি সংশ্লিষ্ট
+কাস্টমস স্টেশন কর্তৃপক্ষ বরাবরে প্রেরণ করার
+নির্দেশনা রয়েছে। উক্ত নির্দেশনা
+অনুযায়ী প্রয়োজনীয় কর্যক্রম গ্রহণের জন্য
+আপনাকে সবিনয় অনুরোধ করা হলো।
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.60\linewidth}
+\hspace{1em}
+\end{minipage}
+\begin{minipage}[t]{0.40\linewidth}
+\begin{center}
+রোখশানা খাতুন
+\\
+ডেপুটি কমিশনার অব কাস্টমস
+\\
+কমিশনার অব কাস্টমস এর পক্ষে
+\\
+কাস্টম হাউস, চট্টগ্রাম।
+\\
+\footnotesize{{\rodt}}
+\vspace*{10MM}
+\end{center}
+\end{minipage}
+\footnotesize{{\fileno}}
+\\
+\underline{\footnotesize{অনুলিপি অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহনের জন্য প্রেরণ করা হলো}}
+\\
+\begin{minipage}[t]{0.06\linewidth}
+\footnotesize{০১।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\footnotesize{
+বিভাগীয় কর্মকর্তা, কাস্টমস, এক্সাইজ ও ভ্যাট বিভাগ, গাজীপুর।
+}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\footnotesize{০২।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+\footnotesize{
+আমদানিকারক {\impn}, {\impadd}
+}
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\footnotesize{০৩।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+সভাপতি/সাধারণ সম্পাদক, বাংলাদেশ টেক্সটাইল
+মিলস এসোসিয়েশন, ইউনিক ট্রেড সেন্টার (লেভেল-৮),
+৮, পান্থপথ, কারওয়ান বাজার, ঢাকা-১২১৫।
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+\footnotesize{০৪।}
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+ অফিস কপি।
+ \\
+ \\
+ \\
+ \\
+ \\
+\end{minipage}
+\begin{minipage}[t]{0.60\linewidth}
+\hspace{1em}
+\end{minipage}
+\normalsize
+\begin{minipage}[t]{0.40\linewidth}
+\begin{center}
+রোখশানা খাতুন
+\\
+ডেপুটি কমিশনার অব কাস্টমস
+\\
+কাস্টম হাউস, চট্টগ্রাম।
+\end{center}
+\end{minipage}
+\thispagestyle{slogan}
+
 
 
 \end{document}
