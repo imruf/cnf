@@ -8,7 +8,6 @@
 \usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
 \usepackage{graphicx}
 \usepackage{array}
-\usepackage[]{amsmath}
 \usepackage{makecell}
 \usepackage{fancyhdr}
 \usepackage[none]{hyphenat}
@@ -19,6 +18,11 @@
             % feature=1,
             % changecounternumbering=0
            ]{latexbangla}
+\include{cnfcommand}
+
+\let\oldhref\href
+\renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -30,73 +34,57 @@
 }
 \rhead{{\filenou}}
 % footer
-%\rfoot{চলমান পৃষ্ঠা-\thepage}
+% \rfoot{চলমান পৃষ্ঠা-\thepage}
 
 \fancypagestyle{laststyle}
 {
    \fancyfoot[R]{}
 }
 
-\newcommand{\fileno}{নথি নং- ৩২৭/এপি/সেকশন-৩/২০২১-২০২২}
-\newcommand{\filenou}{\underline{\fileno}}
-\newcommand{\good}{NEWSPRINT IN REELS WIDTH $28^{''}$}
-\newcommand{\pkg}{108 REEL=42,618.00KG}
-\newcommand{\co}{INDIA}
-\newcommand{\coship}{INDIA}
-\newcommand{\vessel}{MANATEE}
-\newcommand{\blno}{DAHTUTCGP2100361}
-\newcommand{\menifest}{5777}
-\newcommand{\bldt}{26.11.2021}
-\newcommand{\beno}{C-2024379}
-\newcommand{\bedt}{14.12.2021}
-\newcommand{\lcno}{0000174121010813}
-\newcommand{\lcdt}{14.11.2021}
-\newcommand{\lcano}{270446}
-\newcommand{\lcadt}{\lcdt}
-\newcommand{\lienbank}{MERCANTILE BANK LIMITED}
-\newcommand{\invno}{SVPM EX-GST 030}
-\newcommand{\invdt}{23.11.2021}
-\newcommand{\ssml}{SHAMEEM SPINNING MILLS LTD.}
-\newcommand{\ssmla}{SHAFIPUR, KALIAKAIR
-\\
-GAZIPUR-1751, BANGLADESH.}
-\newcommand{\jsml}{JAMUNA SPINNING MILLS LTD.}
-\newcommand{\jsmla}{SHAFIPUR, KALIAKAIR
-\\
-GAZIPUR-1751, BANGLADESH.}
-\newcommand{\jdl}{JAMUNA DENIMS LTD.}
-\newcommand{\jdla}{SHAFIPUR, KALIAKAIR
-\\
-GAZIPUR-1751, BANGLADESH.}
-\newcommand{\scml}{SHAMEEM COMPOSITE MILLS LTD.}
-\newcommand{\jeal}{JAMUNA ELECTRONICS \& AUTOMOBILES LTD.}
-\newcommand{\jdwl}{JAMUNA DENIMS \& WEAVING LTD.}
-\newcommand{\htf}{HOORAIN HTF LTD.}
-\newcommand{\tdj}{M/S THE DAILY JUGANTOR}
-\newcommand{\tdja}{Ka-244, Kuril, Progati Sarani, Vatara PS
-\\
-Dhaka-1229,Bangladesh}
-\newcommand{\impn}{\tdj}
-\newcommand{\impadd}{\tdja}
-\newcommand{\impbin}{001960365-0101}
-\newcommand{\cnfn}{SHAMEEM SPINNING MILLS LTD.}
-\newcommand{\cnfadd}{92,HIGH LEVEL ROAD
-\\
-LALKHAN BAZAR, CHITTAGONG}
-\newcommand{\cnfain}{301083417}
+\newcommand{\fileno}{নথি নং - \hspace{4em}/এপি/সেকশন-৩/২০২১-২০২২}
+\newcommand{\beno}{C-286369}
+\newcommand{\bedt}{10.02.2022}
+\newcommand{\menifest}{2022/733}
+\newcommand{\lcno}{0000229422230002}
+\newcommand{\lcdt}{03.01.2022}
+\newcommand{\lienbank}{FIRST SECURITY ISLAMI BANK LTD.}
+\newcommand{\lcano}{2934}
+\newcommand{\lcadt}{{\lcdt}}
+\newcommand{\invno}{5960002320}
+\newcommand{\invdt}{22.01.2022}
+\newcommand{\blno}{SINA161315}
+\newcommand{\bldt}{22.01.2022}
+\newcommand{\good}{VISCOSE RAYON STAPLE FIBER}
+\newcommand{\pkg}{450.00 BALE = 139.345.50 KGS}
+\newcommand{\product}{}
 \newcommand{\crf}{NON CRF}
 \newcommand{\crfdt}{}
-\newcommand{\hscode}{4801.00.00}
-\newcommand{\price}{US\$ 37,730.62}
-\newcommand{\srooof}{এসআরও নং -১১৪-আইন/২০২১/০৩/কাস্টমস}
-\newcommand{\srooofd}{তারিখ: ২৪/০৫/২০২১ ইং}
-\newcommand{\srotsz}{এসআরও নং - ৩৬০-আইন/২০১৩/২৪৬৮/কাস্টমস}
-\newcommand{\srotszd}{তারিখ: ২৫/১১/২০১৩ ইং}
-\newcommand{\allotment}{৬৯৬.৭২}
-\newcommand{\relesed}{৩০৪.৬৬২}
-\newcommand{\current}{৪২.৬১৮}
-\newcommand{\remaining}{৩৯২.০৫৮}
-\newcommand{\balance}{৩৪৯.৪৪}
+\newcommand{\hscode}{55041000}
+\newcommand{\price}{US\$ 277,446.39}
+\newcommand{\co}{INDONESIA}
+\newcommand{\coship}{INDONESIA}
+\newcommand{\vessel}{KOTA BUANA}
+
+\newcommand{\impn}{\tdj}
+\newcommand{\impadd}{\tdja}
+\newcommand{\impbin}{\tdjbin}
+
+\newcommand{\ircno}{}
+\newcommand{\ircrenewdt}{৩০/০৬/২০২২}
+\newcommand{\musokr}{}
+\newcommand{\miabl}{প্রত্যয়ন পত্র নং- ১৫.০০.০০০০.০১৯.৩১.০৩৭.১৫-১২৯/১(৪)}
+\newcommand{\miabldt}{তারিখ:  ০৩/১১/২০২১ খ্রি:}
+
+\newcommand{\cashtotal}{২৫,৫৫১.৬৩ (পঁচিশ হাজার পাঁচশত একান্ন টাকা তেষট্টি পয়সা)}
+
+\newcommand{\rodt}{তারিখ: \hspace{2.0em}/০২/২০২২ ইং}
+\newcommand{\fdt}{\hspace*{3em} তারিখ: \hspace{2.2em} /০২/২০২২}
+
+\newcommand{\allotment}{৭৫০০}
+\newcommand{\relesed}{৩৯৯.৭১৪৮}
+\newcommand{\current}{১৩৯.৩৪৫৫}
+\newcommand{\remaining}{৭১০০.২৮৫২}
+\newcommand{\balance}{৬৯৬০.৯৩৯৭}
 \newcommand{\taxtab}{
 \noindent
 \begin{longtable}{|l|l|l|l|l|l|l|l|}
@@ -245,7 +233,9 @@ US\$
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
 বি/ই রেজি: নং- {\beno}, তারিখ: {\bedt}
-নথিভূক্ত করে পরবর্তী কার্যক্রমের জন্য উপস্থাপন করা হলো।
+নথিভূক্ত করে
+পরবর্তী কার্যক্রমের জন্য উপস্থাপন করা হলো।
+\\
 \\
 \\
 \end{minipage}
@@ -253,7 +243,7 @@ US\$
 \hspace*{0em}
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
-সহকারী
+\hspace*{0em}
 \end{minipage}
 \begin{minipage}[t]{0.37\linewidth}
 \hspace{0em}
@@ -570,8 +560,8 @@ AIN NO. {\cnfain}
 \end{minipage}
 \begin{minipage}[t]{0.90\linewidth}
 \underline{\textbf{কায়িক পরীক্ষার প্রতিবেদন পর্যালোচনা:}}
-আলোচ্য পণ্য চালানটি ১০০\% কায়িক পরীক্ষার জন্য নির্বাচিত
-নয়।
+আলোচ্য পণ্যচালানটির ক্ষেত্রে
+প্রযোজ্য নয়।
 \\
 \end{minipage}
 \begin{minipage}[t]{0.05\linewidth}
@@ -678,8 +668,7 @@ EXPLANATORY NOTES প্রচলিত এসআরও/স্থায়ী আ�
 শুল্ক (CD-5\%+VAT-15\%+AIT-5\%+AT-5\%)
 আদায় সাপেক্ষে খালাস যোগ্য।
 তথ্য মন্ত্রণালয় ও বানিজ্য মন্ত্রণালয়ের যৌথ
-প্রত্যায়ন
-পত্র নং - ১৫.০০.০০০০.০১৯.৩১.০৩৭.১৫-১২৯/১(৪),
+{\miabl}, {\miabldt}
 তারিখ: ০৩/১১/২০২১ ইং
 তে মোট বরাদ্দের পরিমাণ
 {\allotment} মে.টন।
