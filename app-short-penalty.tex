@@ -1,8 +1,10 @@
 \documentclass[12pt]{article}
-\usepackage[a4paper,
-            lmargin=1in,rmargin=1in,
-            bmargin=1in,tmargin=1in]{geometry}
+\usepackage[legalpaper,
+            lmargin=1in,rmargin=0.5in,
+            bmargin=0.5in,tmargin=1in,
+            headheight=0.2in, includefoot]{geometry}
 \usepackage{fontspec}
+\usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{multirow}
 \usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
@@ -40,22 +42,53 @@
    \fancyhead[C]{}
 }
 
-\newcommand{\good}{PARTS \& COM FOR TV MFG IND}
-\newcommand{\pkg}{1,032.00 Carton=10456.25 KG}
-\newcommand{\hscode}{85340000}
-\newcommand{\price}{US\$ 28,530.20}
+\fancypagestyle{case}
+{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% header
+\lhead{
+{\footnotesize{``উন্নয়নের অক্সিজেন রাজস্ব''}}
+}
+\rhead{
+{\footnotesize{``জনকল্যানে রাজস্ব''}}
+}
+}
 
-\newcommand{\vessel}{MV.MAERSK XIAMEN}
 
-\newcommand{\blno}{215374482}
-\newcommand{\bldt}{02.01.2022}
+\newcommand{\fileno}{নথি নং - ২২৫২/এপি/সেকশন-৭(এ)/২০২১-২০২২}
+\newcommand{\product}{JAMUNA FREEZER}
+\newcommand{\good}{KRAFT SILICON PAPER, EPOXY WHITE POWDER}
+\newcommand{\pkg}{11 PKG=8,763.00 KG}
+\newcommand{\co}{CHINA}
+\newcommand{\coship}{CHINA}
+\newcommand{\vessel}{HAIAN WEST}
+\newcommand{\rotno}{2021/6136}
+\newcommand{\blno}{1ZSSHA21120956}
+\newcommand{\bldt}{27.12.21}
+\newcommand{\beno}{C-25420}
+\newcommand{\bedt}{04.01.2022}
+\newcommand{\lcno}{0000174121020359}
+\newcommand{\lcdt}{13.12.21}
+\newcommand{\lcano}{275993}
+\newcommand{\lcadt}{\lcdt}
+\newcommand{\lienbank}{MERCANTILE BANK LTD.}
+\newcommand{\invno}{BST20212212201}
+\newcommand{\invdt}{22.12.21}
 
-\newcommand{\beno}{C-207311}
-\newcommand{\bedt}{31.01.2022}
-\newcommand{\menifest}{2022/184}
+\newcommand{\impn}{\jeal}
+\newcommand{\impadd}{\jeala}
+\newcommand{\impbin}{\jealbin}
 
-\newcommand{\lcno}{0000088821010247}
-\newcommand{\lcdt}{30.09.2021}
+\newcommand{\crf}{NON CRF}
+\newcommand{\crfdt}{}
+\newcommand{\ircno}{নং- ২৬০৩২৬১২০৪২৬৭২০}
+\newcommand{\ircrenewdt}{৩০.০৬.২০২২}
+\newcommand{\musokr}{}
+\newcommand{\hscode}{84189910}
+\newcommand{\price}{US\$ 21,522.30}
+\newcommand{\menifest}{2021/6136}
+
 
 \newcommand{\rodt}{\hspace{3em}-\hspace{3em}-২০২২ খ্রি:}
 
@@ -63,7 +96,6 @@
 \begin{center}
 \textbf{\underline{সংক্ষিপ্ত ন্যায়-নির্ণয়ের আবেদন ফরম}}
 \end{center}
-
 \noindent
 বরাবর
 \\
@@ -92,10 +124,11 @@
 ROT NO. {\menifest},
 B/L NO. {\blno},
 DT: {\bldt}
-B/E NO: {\beno}, DT: {\bedt}
 -এর মাধ্যমে আমদানিকৃত পণ্য
 {\good}
-খালাসের নিমিত্তে।
+খালাসের নিমিত্তে
+দাখিলকৃত
+B/E NO: {\beno}, DT: {\bedt}।
 \\
 \\
 \end{minipage}
@@ -105,7 +138,7 @@ B/E NO: {\beno}, DT: {\bedt}
 ঘোষণা করছি যে, বিষয়ে উল্লেখিত আমদানিকৃত পণ্যচালান অসত্য
 HS.Code
 ঘোষণায়  আমদানি হওয়াতে
-{\tca} -এর ধারা ৩২ লঙ্ঘনের কারণে
+আমদানি নীতি আদেশ -এর ধারা ৩২ লঙ্ঘনের কারণে,
 {\tca} -এর ধারা ১৫৬(১) এর টেবিলের দফা ১৪ অনুযায়ী
 শাস্তিযোগ্য অপরাধ।
 \\
@@ -146,7 +179,216 @@ HS.Code
 \\
 ফোন নম্বর-  ...................................................
 \end{minipage}
-\thispagestyle{laststyle}
+\thispagestyle{empty}
+\newpage
+\setstretch{1.3}
+\fontsize{10pt}{10pt}\selectfont
+\begin{center}
+গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+\\
+কাস্টম হাউস, চট্টগ্রাম।
+\\
+আদেশ নং ...................................................................................................................................... তারিখ: .........................
+\\
+আদেশ প্রদানকারী কর্মকর্তা জনাব মোঃ আল-আমিন, ডেপুটি কমিশনার অব কাস্টমস, কাস্টম হাউস, চট্টগ্রাম।
+\\
+\textbf{\underline{``মামলার সংক্ষিপ্ত বিবরণ''}}
+\\
+\end{center}
+\begin{minipage}[t]{0.05\linewidth}
+% ek
+\hspace{0em}
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+মিথ্যা ঘোষণায় পণ্য আমদানি করার অপরাধ স্বীকার করে আমদানিকারকের পক্ষে
+সিএন্ডএফ এজেন্টের প্রতিনিধি সংক্ষিপ্ত বিচারের আবেদন করেছেন।
+তাঁর আবেদন গ্রহণ করা হলো। আদেশের এই কপিটি যার নামে জারী করা হয়েছে
+তার নিজস্ব ব্যবহারের জন্য বিনামূল্যে প্রদান করা হলো।
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+০২।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+আমদানিকারক {\impn}, {\impadd}
+এলসি নং-{\lcno}, DT:{\lcdt}
+এর মাধ্যমে {\co}
+হতে
+(1) KRAFT SILICON PAPER,
+(2) EPOXY WHITE POWDER
+ঘোষণায় পণ্য আমদানি করে তা
+খালাসের লক্ষ্যে আমাদানিকারকের
+মনোনিত সিএন্ডএফ এজেন্ট
+{\cnfn}, {\cnfadd} -এর
+মাধ্যমে
+B/E NO. {\beno}, DT: {\bedt}
+দাখিল করেন।
+নথি পর্যালোচনায় দেখা যায় যে,
+ক্রমিক নং-২ এর পণ্য
+EPOXY WHITE POWDER
+ঘোষিত HS Code 84189910
+(CD -25\%, AIT-0.83\% )
+প্রদান করলেও
+{\fsen}
+অনুযায়ী উল্লিখিত
+EPOXY WHITE POWDER
+পণ্যের প্রকৃত HS Code 32089090
+(CD -25\%, RD-3\%, AIT-0.83\% ) -এ
+শ্রেণীবিন্যাসযোগ্য ও শুল্ক করাদি আদায়যোগ্য।
+অর্থাৎ মিথ্যা ঘোষণায় পণ্য আমদানি করেছেন।
+\end{minipage}
+\begin{center}
+\textbf{\underline{পর্যালোচনা}}
+\end{center}
+\begin{minipage}[t]{0.05\linewidth}
+০৩।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+পণ্য চালানের ইনভয়েস, প্যাকিং লিস্ট ও
+শিপিং দলিলাদি দেখলাম।
+ঘোষণা অনুযায়ী চালানের পণ্য
+(1) KRAFT SILICON PAPER,
+(2) EPOXY WHITE POWDER।
+পণ্যচালানটি শতভাগ কায়িক পরীক্ষা করা হয়।
+ক্রমিক নং-২ এর পণ্য
+EPOXY WHITE POWDER
+ঘোষিত HS Code 84189910
+(CD -25\%, AIT-0.83\% )
+প্রদান করলেও
+{\fsen}
+অনুযায়ী উল্লিখিত
+EPOXY WHITE POWDER
+পণ্যের প্রকৃত HS Code 32089090
+(CD -25\%, RD-3\%, AIT-0.83\% ) -এ
+শ্রেণীবিন্যাসযোগ্য ও শুল্ক করাদি আদায়যোগ্য।
+আলোচ্য চালানের মোট
+শুল্কায়নযোগ্য মূল্য
+১৮,৫৬,৪০৪.৯৮ (আঠারো লক্ষ ছাপ্পান্ন হাজার চারশত চার টাকা আটানব্বই পয়সা) টাকা।
+এবং মিথ্যা ঘোষণা প্রদান করায় রাজস্ব হানি/ঝুঁকির পরিমান
+৪১,৮০৯.৮৫
+(একচল্লিশ হাজার আটশত নয় টাকা পঁচাশি পয়সা) টাকা।
+আলোচ্য ক্ষেত্রে আমদানিকারক মিথ্যা ঘোষণায়
+পণ্য আমদানি করেছেন।
+এর ফলে মিথ্যা ঘোষণায় পণ্য আমদানির আপরাধ
+প্রমাণিত ও প্রতিষ্ঠিত।
+যা {\tca} এর Section 16 এর
+লঙ্ঘনসহ Section 32 মোতাবেক
+অসত্য ঘোষণা যা উক্ত {\tca}
+এর Section 156(1) এর Table এর
+Clause 9(i) ও 14 মোতাবেক দন্ডনীয় অপরাধ।
+আলোচ্য ক্ষেত্রে আমদানিকারকের পক্ষে সিএন্ডএফ
+এজেন্টের প্রতিনিধি নিজেও অসত্য ঘোষণার অপরাধ
+স্বীকার করেছেন।
+\end{minipage}
+\begin{center}
+\textbf{\underline{আদেশ}}
+\end{center}
+\begin{minipage}[t]{0.05\linewidth}
+০৪।
+\end{minipage}
+\begin{minipage}[t]{0.95\linewidth}
+আমদানিকারক {\tca} এর Section 16
+এর লঙ্ঘনসহ Section 32 মোতাবেক
+অসত্য ঘোষণার বিষয়টি সন্দেহাতীতভাবে প্রমাণিত
+হওয়ায় উক্ত {\tca} এর Section 156(1) এর
+Table এর Clause 9(i) ও 14 এর বিধান-এ প্রদত্ত
+ক্ষমতা বলে উক্ত পণ্যচালানটি
+রাষ্ট্রের অনুকূলে বাজেয়াপ্তকরণসহ উক্ত আমদানিকারকের
+উপর
+৮৫,০০০ (পঁচাশি হাজার টাকা) টাকা
+মাত্র অর্থদন্ড আরোপ করা হলো। তবে পণ্যগুলি অবাধে আমদানিযোগ্য
+বিধায় {\tca} এর Section 181 ধারায় প্রদত্ত ক্ষমতা
+বলে
+৫০০০ (পাঁচ হাজার টাকা) টাকা মাত্র
+বিমোচন জরিমানা আরোপ করা হলো।
+চালানের পণ্য যথাযথ HS Code -এ শ্রেণিবিন্যাস ও যথাযথ
+মূল্যে শুল্কায়নপূর্বক প্রযোজ্য শুল্ক করাদি, অর্থদন্ড, বিমোচন জরিমানা
+ইত্যাদি পরিশোধ এবং প্রযোজ্য ক্ষেত্রে আমদানি নীতি আদেশের
+শর্তাদি প্রতিপালন ও প্রযোজ্য আনুষ্ঠানিকতা পরিপালন সাপেক্ষে
+আমদানিকারকের অনুকূলে পণ্য খালাস দেওয়ার আদেশ দিলাম।
+উল্লেখ্য জরিমানার অর্থ শুল্ক করাদির অতিরিক্ত হিসাবে আদায়যোগ্য
+হবে। এছাড়া সংশ্লিষ্ট সেকশনের রাজস্ব কর্মকর্তা/সহকারী রাজস্ব কর্মকর্তা
+প্রযোজ্য ক্ষেত্রে পণ্যের বি/ই এর যাবতীয় Adjustment এর কার্যাদিও সম্পন্ন করবেন।
+\\
+\\
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+প্রাপক:
+\end{minipage}
+\begin{minipage}[t]{0.65\linewidth}
+{\impn}
+\end{minipage}
+\begin{minipage}[t]{0.30\linewidth}
+\hspace{0em}
+\end{minipage}
+\begin{minipage}[t]{0.05\linewidth}
+\hspace{0em}
+\end{minipage}
+\begin{minipage}[t]{0.65\linewidth}
+{\impadd}
+\end{minipage}
+\begin{minipage}[t]{0.30\linewidth}
+\begin{center}
+(মোঃ আল-আমিন)
+\\
+ডেপুটি কমিশনার অব কাস্টমস
+\\
+তারিখ: {\rodt}
+\end{center}
+\end{minipage}
+\newline
+{\fileno}
+\\
+অনুলিপি অবগতি ও প্রয়োজনীয় কার্যকরী ব্যবস্থা গ্রহণের জন্য প্রেরণ করা হলো
+\\
+\begin{minipage}[t]{0.06\linewidth}
+০২।
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+যুগ্ম কমিশনার (জেটি), কাস্টম হাউস, চট্টগ্রাম।
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+০৩।
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+সিএন্ডএফ এজেন্ট {\cnfn}।
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+০৪।
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+পিএটু কমিশনার, কাস্টম হাউস, চট্টগ্রাম (কমিশনার মহোদয়ের সদয় অবগতির জন্য)।
+\end{minipage}
+\begin{minipage}[t]{0.06\linewidth}
+০৫।
+\end{minipage}
+\begin{minipage}[t]{0.94\linewidth}
+অফিস কপি।
+\\
+\\
+\\
+\end{minipage}
+\begin{minipage}[t]{0.70\linewidth}
+\hspace{0em}
+\end{minipage}
+\begin{minipage}[t]{0.30\linewidth}
+\begin{center}
+(মোঃ আল-আমিন)
+\\
+ডেপুটি কমিশনার অব কাস্টমস
+\end{center}
+\end{minipage}
+\thispagestyle{case}
+
+
+
+
+\end{document}
+
+
 
 \end{document}
 
