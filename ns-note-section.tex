@@ -20,71 +20,81 @@
            ]{latexbangla}
 \include{cnfcommand}
 
+
+\let\oldhref\href
+\renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+
+
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 % header
 \chead{
-\underline{{=পাতা-০৩=}}
+\underline{{পৃষ্ঠা - \thepage}}
 \\
 }
+\rhead{{\filenou}}
+% footer
+% \rfoot{চলমান পৃষ্ঠা-\thepage}
 
 \fancypagestyle{laststyle}
 {
    \fancyfoot[R]{}
 }
 
-\rhead{{\filenou}}
-% footer
-%\rfoot{চলমান পৃষ্ঠা-\thepage}
+\newcommand{\fileno}{নথি নং - ২১৬৯/এপি/সেকশন-৭(বি)/২০২১-২০২২}
+\newcommand{\beno}{C-1890763}
+\newcommand{\bedt}{24.11.2021}
+\newcommand{\lcno}{0000174121020247}
+\newcommand{\lcdt}{16.09.2021}
+\newcommand{\lienbank}{AGRANI BANK LTD.}
+\newcommand{\lcano}{128274}
+\newcommand{\lcadt}{{\lcdt}}
+\newcommand{\invno}{BST2021101801}
+\newcommand{\invdt}{18.10.2021}
+\newcommand{\blno}{SHWWSE211018213}
+\newcommand{\bldt}{25.10.2021}
+\newcommand{\good}{SPARE PARTS}
+\newcommand{\pkg}{1859.50 KGS}
+\newcommand{\product}{}
+\newcommand{\crf}{NON CRF}
+\newcommand{\crfdt}{}
+\newcommand{\hscode}{4010.12.00, 8482.80.00, 8448.49.00, 8483.40.00 Etc.}
+\newcommand{\price}{US\$ 66,921.70}
+\newcommand{\co}{CHINA}
+\newcommand{\coship}{HONG KONG}
+\newcommand{\vessel}{MV. MCC TAIPEI}
 
-\newcommand{\fileno}{নথি নং: এস-১-৮২৭/আই.জি.এম/সংশোধনী/২০২১-২০২২}
-\newcommand{\fdt}{\hspace*{3em} তারিখ: \hspace{2.4em} /১২/২১}
+\newcommand{\impn}{\htf}
+\newcommand{\impadd}{\htfa}
+\newcommand{\impbin}{\htfbin}
+\newcommand{\ircno}{আইআরসি নং - ২৬০৩২৬১২০৪২৬৭২০}
+\newcommand{\ircrenewdt}{৩০/০৬/২০২২ ইং}
+\newcommand{\musokr}{সেপ্টেম্বর-২১}
+\newcommand{\menifest}{2021/5230}
 
+\newcommand{\btmaltno}{প্রত্যয়ন পত্র নং- ২৮৫২২}
+\newcommand{\btmaltnodt}{তারিখ:  ১৮/০৯/২০২১ খ্রি:}
+
+
+\newcommand{\rodt}{তারিখ: \hspace{2.0em}/০২/২০২২ ইং}
+\newcommand{\fdt}{\hspace*{3em} তারিখ: \hspace{2.2em} /০২/২০২২}
 
 \begin{document}
 \noindent
 \begin{minipage}[t]{0.05\linewidth}
 % ek
-০৭।
+০১।
 \end{minipage}
 \begin{minipage}[t]{0.95\linewidth}
-পূর্ববর্তী নোট অনুচ্ছেদ সমূহ সদয় দ্রষ্টব্য।
-নোট অনুচ্ছেদ ০৬ এর নির্দেশনা অনুযায়ী নথিতে
-রক্ষিত
-Invoice, Packing List, B/L, Proforma Invoice LC
-এবং
-LCA
-তে বর্ণিত পণ্য
-JS-30
-MODIFIED STARCH.
-অপরদিকে
-IGM অনুযায়ী পণ্য
-JS-30
-FINISHING AGENT
-অর্থাৎ
-IGM
--এ ঘোষিত পণ্য
-Invoice, Packing List, B/L, Proforma Invoice LC
-এবং
-LCA
--তে ঘোষিত পণ্যের
-বর্ণনা ভিন্ন।
-আলোচ্য পণ্য
-JS-30
-MODIFIED STARCH.
-নামীয় পণ্যের শুল্কায়ন
-সেকশন-৮(সি)।
-\\
-\\
-এমতাবস্থায়, আলোচ্য
-B/L NO T12BKKCGP01026
-DT. 21.11.21
-ভুক্ত পণ্যচালানটির IGM
-সংশোধনে শুল্কায়ন সেকশন-৮(সি) এর
-কোন আপত্তি নেই। তবে IGM সংশোধনপূর্বক শুল্কায়নের পূর্বে পণ্যচালানটি শতভাগ কায়িক পরীক্ষা করা যেতে পারে।
-\\
-সদয় আদেশার্থে।
+আমদানিকারকের প্রতিনিধি কমিশনার মহদোয় বরাবর একখানা আবেদন করেছেন, আবেদন পত্র নং- নাই তারিখ: ০৩/০৩/২০২২ খ্রিঃ নথির যোগাযোগ অংশে রক্ষিত আছে, দয়া করে দেখা যেতে পারে। আবেদনে তারা উল্লেখ করেন যে, তাদের আমদানিকারক {\impn},
+{\impadd} {\co} হতে ১৪ প্যাকেজ {\good}
+আমদানি করেন।
+পণ্যচালানটি শতভাগ কায়িক পরীক্ষা
+করা হয়। কায়িক পরীক্ষা শেষে জেটি কাস্টম হতে
+পণ্যের ইমেজ ও প্রতিবেদন প্রেরণ করা হয়। জেটি কাস্টম হতে প্রেরিত ইমেজ দৃষ্টে পণ্যের সঠিক বাণিজ্যিক বর্ণনা
+স্পষ্ট না হওয়ায় পণ্যচালানটির পুনরায় (দ্বিতীয়বার) কায়িক পরীক্ষা করা প্রয়োজন। এমতাবস্থায় তারা কমিশনার মহোদয়ের বরাবরে পণ্যচালানটির পুনরায় (দ্বিতীয়বার) কায়িক পরীক্ষা করানোর অনুমতি চেয়ে বিনীত আবেদন জানিয়েছেন। তাদের আবেদন গৃহীত হলে
+পণ্যচালানটির পুনরায় (দ্বিতীয়বার) কায়িক পরীক্ষা করানোর পর প্রাপ্ত প্রতিবেদনের আলোকে শুল্কায়ন করা যেতে পারে।
 \end{minipage}
 
 \end{document}
